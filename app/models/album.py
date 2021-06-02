@@ -9,4 +9,5 @@ class Album(db.Model):
     artist_id = db.Column(db.Integer, db.ForeignKey('artists.id'), nullable=False)
 
     tracks = db.relationship('Track', backref='album', lazy='joined')
-    
+
+
