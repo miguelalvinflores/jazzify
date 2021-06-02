@@ -6,4 +6,7 @@ class Album(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     album_title = db.Column(db.String(200), nullable=False)
     image_url = db.Column(db.String, nullable=False)
-    artist_id = db.Column(db.String(200), db.ForeignKey('artist.id'), nullable=False)
+    artist_id = db.Column(db.Integer, db.ForeignKey('artists.id'), nullable=False)
+
+    tracks = db.relationship('Track', backref='album', lazy='joined')
+    

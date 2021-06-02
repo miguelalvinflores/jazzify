@@ -7,4 +7,5 @@ class Artist(db.Model):
     artist_name = db.Column(db.String(200), nullable=False)
     image_url = db.Column(db.String, nullable=False)
 
-    albums = db.relationship('Albums', backref='person', lazy=True)
+    albums = db.relationship('Album', backref='artist', lazy="joined")
+    tracks = db.relationship('Track', backref='artist', lazy='joined')
