@@ -3,15 +3,34 @@ from app.models import db, Album
 
 def seed_albums():
     album1 = Album(
-        album_title="Louis Armstrong Classics"
-        image_url='https://ia800108.us.archive.org/13/items/78_west-end-blues_louis-armstrong-and-his-orchestra-spencer-williams_gbia0031327/78_west-end-blues_louis-armstrong-and-his-orchestra-spencer-williams_gbia0031327_itemimage.jpg'
-        artist_id='1'
+        album_title="Louis Armstrong Classics",
+        image_url='https://ia800108.us.archive.org/13/items/78_west-end-blues_louis-armstrong-and-his-orchestra-spencer-williams_gbia0031327/78_west-end-blues_louis-armstrong-and-his-orchestra-spencer-williams_gbia0031327_itemimage.jpg',
+        artist_id='1',
+    )
+    album2 = Album(
+        album_title="A Duke Ellington Panorama",
+        image_url='https://ia600607.us.archive.org/21/items/78_a-duke-ellington-panorama_duke-ellington-and-his-famous-orchestra-ellington-miley-d_gbia0003362/78_a-duke-ellington-panorama_duke-ellington-and-his-famous-orchestra-ellington-miley-d_gbia0003362_itemimage.jpg',
+        artist_id='2',
+    )
+
+    album3 = Album(
+        album_title="Boogie Woogie",
+        image_url='https://ia601603.us.archive.org/12/items/78_boogie-woogie_harry-james-and-the-boogie-woogie-trio-james-pete-johnson-eddie-dough_gbia0005675/78_boogie-woogie_harry-james-and-the-boogie-woogie-trio-james-pete-johnson-eddie-dough_gbia0005675_itemimage.jpg',
+        artist_id='3',
     )
 
     db.session.add(album1)
+    db.session.add(album2)
+    db.session.add(album3)
+    db.session.commit()
 
     # album1 = Album(
-    #     album_title=""
-    #     image_url=''
-    #     artist_id='num'
+    #     album_title="",
+    #     image_url='',
+    #     artist_id='num',
     # )
+
+
+def undo_albums():
+    db.session.execute('TRUNCATE albums RESTART IDENTITY CASCADE;')
+    db.session.commit()
