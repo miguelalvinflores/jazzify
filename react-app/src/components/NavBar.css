@@ -1,0 +1,12 @@
+nav{
+    display: flex;
+
+}
+
+.logo-container {
+    margin-top: 10px;
+    margin-left: 5%;
+    width: 200px;
+    height: 70px;
+    /* margin-bottom: 10px; */
+}

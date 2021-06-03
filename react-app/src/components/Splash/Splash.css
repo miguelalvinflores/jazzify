@@ -1,0 +1,25 @@
+img {
+    max-width: 100%;
+    border: 0;
+}
+.story-cards {
+    position: relative;
+    top: -80px;
+    width: 100%;
+}
+div.hero-card {
+    position: relative;
+    color: aliceblue;
+    height: 568px;
+    width: 100%;
+}
+.hero-card-background {
+    height: 568px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgb(155, 240, 225);
+}

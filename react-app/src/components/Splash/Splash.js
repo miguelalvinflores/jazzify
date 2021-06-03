@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import { checkEmail } from '../../store/session';
+import './Splash.css'
 
 const Splash = () => {
     const user = useSelector((state) => state.session.user);
@@ -64,7 +65,7 @@ const Splash = () => {
         <div className="story-cards">
             <div className="hero-card">
                 <div className="hero-card-background">
-                    <img className='hero-card-img' src='images/Splash-background.png' alt="Example Movie title panel" />
+                    
                     <div className="concord-img-gradient"></div>
                 </div>
                 <div className="hero-story-card-text">
@@ -99,8 +100,8 @@ const Splash = () => {
             <div className='story-card watchOnPC'>
                 <div className='story-card-container'>
                     <div className='story-card-text'>
-                        <h1 className='story-card-title'>Enjoy your cat content.</h1>
-                        <h2 className='story-card-subtitle'>Stream cat clips on your phone, tablet, laptop, and any other devices with internet browser access.</h2>
+                        <h1 className='story-card-title'>Enjoy your favorite jazz content.</h1>
+                        <h2 className='story-card-subtitle'>Dont be a square join up today!</h2>
                     </div>
                     <div className='story-card-img-container'>
                         <img className='-card-img' src='images/Splash-Device_Screens.png' alt="Example Movie title panel" />
