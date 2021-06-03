@@ -55,6 +55,21 @@ def logout():
     return {'message': 'User logged out'}
 
 
+@auth_routes.route('/check_email', methods=['POST'])
+def check_address():
+    """
+    Checks if email already exists
+    """
+    form = CheckEmailForm()
+    form['csrf_token'].data = request.cookies['csrf_token']
+    if form.validate_on_submit():
+        user = User.query.filter(User.email == form.data['email']).first()
+        if (user):
+            return {'email': user.email}
+        return {'email': None}
+    return {'errors': validation_errors_to_error_messages(form.errors)}, 401
+
+
 @auth_routes.route('/signup', methods=['POST'])
 def sign_up():
     """

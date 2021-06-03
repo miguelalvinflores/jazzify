@@ -25,7 +25,12 @@ function App() {
     return null;
   }
 
+  let loggedIn = false;
+  if (user) {
+    loggedIn = true;
+  }
   return (
+    
     <BrowserRouter>
       <NavBar />
       <Switch>
