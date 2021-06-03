@@ -65,8 +65,8 @@ const Splash = () => {
         <div className="story-cards">
             <div className="hero-card">
                 <div className="hero-card-background">
-                    
-                    <div className="concord-img-gradient"></div>
+                    <div className='hero-card-img'></div>
+                    {/* <div className="concord-img-gradient"></div> */}
                 </div>
                 <div className="hero-story-card-text">
                     <h1 className="story-card-title">

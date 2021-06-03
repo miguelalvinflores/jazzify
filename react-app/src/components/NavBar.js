@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { NavLink, useLocation } from 'react-router-dom';
-import LogoutButton from './auth/LogoutButton';
 import ProfileButton from './ProfileButton'
+import './NavBar.css'
 
 const NavBar = () => {
   const sessionUser = useSelector((state) => state.session.user);
@@ -33,9 +33,14 @@ const NavBar = () => {
     );
   } else {
     sessionLinks = (
-      <button className='btn-red authLinks'>
-        <NavLink to='/login' className='login-nav' style={{ textDecoration: 'none' }}>Sign In</NavLink>
-      </button>
+      <NavLink to='/login' className='login-nav' style={{ textDecoration: 'none' }}>
+        <div className='authLinks'>
+          <button className='btn-red'>
+            Sign In
+          </button>
+
+        </div>
+          </NavLink>
     )
   }
 
@@ -44,7 +49,7 @@ const NavBar = () => {
       <a className='logo-container' href='/' exact='true' activeclassname='active'>
         <img src='images/Logo_Text.png' alt='Jazzify logo' />
       </a>
-
+      {sessionLinks}
     </nav>
   );
 }

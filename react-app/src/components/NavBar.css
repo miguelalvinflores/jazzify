@@ -1,12 +1,47 @@
 nav{
     display: flex;
+    background-color: black;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+a:visited {
+    text-decoration: none;
 
 }
 
 .logo-container {
     margin-top: 10px;
+    width: 150px;
+    height: 54px;
+    margin-bottom: 10px;
+}
+
+.authLinks {
+
+    padding: 7px 17px;
+}
+
+.btn-red {
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgb(200, 200, 200);
+    height: 32px;
+    border-radius: 15px;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    margin-top: 15px;
+    margin-right: 2px;
     margin-left: 5%;
-    width: 200px;
-    height: 70px;
-    /* margin-bottom: 10px; */
+    background-color: #626262;
+    line-height: normal;
+
+    width:100%
+}
+
+.btn-red:hover {
+    opacity: 0.75;
+    width: 105%;
+    height: 34px;
+    margin-top: 14px;
+    margin-right: 2px
 }

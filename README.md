@@ -79,6 +79,10 @@ This is the backend for the Flask React project.
    ```bash
    heroku container:push web -a jazzify-aa
    ```
+   OR
+   ```bash
+   heroku container:push web -a jazzify-aa -
+   ```
 
 8. Release your docker container to heroku
 
