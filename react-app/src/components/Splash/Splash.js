@@ -68,9 +68,11 @@ const Splash = () => {
                     <div className="hero-card">
                         <div className="hero-story-card-text">
                             <p className='type-element'>FOR NEW USERS</p>
-                            <h1 className="story-card-title">
-                                Jazz Music delivered to you for free.
-                            </h1>
+                            <div className='story-card-tilte-container'>
+                                <h1 className="story-card-title">
+                                    Jazz Music delivered to you for free.
+                                </h1>
+                            </div>
                             <h2 className="story-card-subtitle">
                                 Enjoy the greatest hits from Jazz's heaviest hitters such as Louie Armstrong, Duke Ellington, and more.
                             </h2>
@@ -94,6 +96,9 @@ const Splash = () => {
                                 </form>
                             </div>
                         </div>
+                        <div className='hero-img-container'>
+                            <div data-in-view="true" className='hero-image'></div>
+                        </div>
                     </div>
                 </article>
             </section>
@@ -102,7 +107,9 @@ const Splash = () => {
                 <div className='story-card-container'>
                     <div className='story-card-text'>
                         <p className='type-element'>FOR RETURNING USERS</p>
-                        <h1 className='story-card-title'>Enjoy your favorite jazz content.</h1>
+                        <div className='story-card-title-container'>
+                            <h1 className='story-card-title'>Enjoy your favorite jazz content.</h1>
+                        </div>
                         <h2 className='story-card-subtitle'>Dont be a square join up today!</h2>
                     </div>
                     <div className='story-card-img-container'>
