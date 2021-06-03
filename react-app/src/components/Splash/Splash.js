@@ -63,43 +63,45 @@ const Splash = () => {
 
     return (
         <div className="story-cards">
-            <div className="hero-card">
-                <div className="hero-card-background">
-                    <div className='hero-card-img'></div>
-                    {/* <div className="concord-img-gradient"></div> */}
-                </div>
-                <div className="hero-story-card-text">
-                    <h1 className="story-card-title">
-                        Jazz Music delivered to you for free.
-                    </h1>
-                    <h2 className="story-card-subtitle">
-                        Enjoy the greatest hits from Jazz's heaviest hitters such as Louie Armstrong, Duke Ellington, and more.
-                    </h2>
-                    <div className="story-signup-button">
-                        <h3 className="story-signup-text">Ready listen? Enter your email to create your account.</h3>
-                        <form className='email-form' onSubmit={onGetStartedClick}>
-                            <ul>{emailCheckErrors}</ul>
-                            <div className='email-form-lookup'>
-                                <div id='float-label'>
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        id='email_hero'
-                                        onChange={(e) => handleTextChange(e.target.value)}
-                                        required
-                                    />
-                                    <label className={ isActive ? "Active" : ""} htmlFor='email_hero'>Email address</label>
-                                </div>
-                                <button className='hero-btn-red' type='submit'>Get Started {'>'}</button>
+            <section color='#9bf0e1' className='hero-section'>
+                <article color='#2d46b9' className='hero-article'>
+                    <div className="hero-card">
+                        <div className="hero-story-card-text">
+                            <p className='type-element'>FOR NEW USERS</p>
+                            <h1 className="story-card-title">
+                                Jazz Music delivered to you for free.
+                            </h1>
+                            <h2 className="story-card-subtitle">
+                                Enjoy the greatest hits from Jazz's heaviest hitters such as Louie Armstrong, Duke Ellington, and more.
+                            </h2>
+                            <div className="story-signup-button">
+                                <h3 className="story-signup-text">Ready listen? Enter your email to create your account.</h3>
+                                <form className='email-form' onSubmit={onGetStartedClick}>
+                                    <ul>{emailCheckErrors}</ul>
+                                    <div className='email-form-lookup'>
+                                        <div id='float-label'>
+                                            <input
+                                                type="email"
+                                                name="email"
+                                                id='email_hero'
+                                                onChange={(e) => handleTextChange(e.target.value)}
+                                                required
+                                            />
+                                            <label className={ isActive ? "Active" : ""} htmlFor='email_hero'>Email address</label>
+                                        </div>
+                                        <button className='hero-btn-red' type='submit'>Get Started {'>'}</button>
+                                    </div>
+                                </form>
                             </div>
-                        </form>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </article>
+            </section>
             <div className='card-spacer'></div>
             <div className='story-card watchOnPC'>
                 <div className='story-card-container'>
                     <div className='story-card-text'>
+                        <p className='type-element'>FOR RETURNING USERS</p>
                         <h1 className='story-card-title'>Enjoy your favorite jazz content.</h1>
                         <h2 className='story-card-subtitle'>Dont be a square join up today!</h2>
                     </div>

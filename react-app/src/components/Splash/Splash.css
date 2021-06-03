@@ -7,63 +7,83 @@ img {
     /* top: -80px; */
     width: 100%;
 }
-div.hero-card {
-    position: relative;
-    color: rgb(45, 70, 185);
-    height: 568px;
-    width: 100%;
-}
-.hero-card-background {
-    height: 568px;
-    width: 100%;
-    position: relative;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: -1;
-
-    /* position: absolute; */
-}
-
-.hero-card-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: none;
+.hero-section {
     background-color: rgb(155, 240, 225);
-
+    color: rgb(45, 70, 185);
+    text-align: center;
+    overflow: auto;
 }
 
-.concord-img-gradient {
-    background: rgba(0, 0, 0, 0.4);
-    background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.4) 0,
-      rgba(0, 0, 0, 0) 25%,
-      rgba(0, 0, 0, 0.4) 65%
-    );
-    height: 100%;
+.hero-article {
+    font-family: spotify-circular, Circular, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-height: 480px;
 }
 
-.hero-card .concord-img-gradient {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 568px;
+@media (min-width: 992px){
+    .hero-article {
+        width: 970px;
+    }
+}
+
+@media (min-width: 768px){
+    .hero-article {
+        width: 750px;
+    }
+}
+
+div.hero-card {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (min-width: 1200px){
+    div.hero-card
+    .JhijG {
+        flex-direction: row;
+    }
 }
 
 .hero-story-card-text {
-    position: relative;
-    top: -568px;
+    padding-top: 48px;
+    padding-bottom: 24px;
     width: 100%;
-    padding: 75px 0;
-    padding-top: 150px;
-    max-width: 950px;
-    margin: 0 auto;
-    text-align: center;
-    z-index: 1;
+    -webkit-font-smoothing: antialiased;
+}
+@media (min-width: 768px){
+    .hero-story-card-text {
+        padding-bottom: 48px;
+    }
+}
+
+@media (min-width: 1200px){
+    .hero-story-card-text {
+        margin-right: 32px;
+        text-align: left;
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+}
+
+.story-card-title {
+    font-size: 60px;
+    line-height: 1.2;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 900;
+    max-width: 100%;
+    width: auto;
+    display: inline-block;
 }
 
 .email-form {

@@ -33,24 +33,28 @@ const NavBar = () => {
     );
   } else {
     sessionLinks = (
-      <NavLink to='/login' className='login-nav' style={{ textDecoration: 'none' }}>
-        <div className='authLinks'>
-          <button className='btn-red'>
-            Sign In
-          </button>
-
-        </div>
-          </NavLink>
+      <ul className='nav-list'>
+        <NavLink to='/sign-up' className='signup-nav nav' style={{ textDecoration: 'none' }}>
+          Sign up
+        </NavLink>
+        <NavLink to='/login' className='login-nav nav' style={{ textDecoration: 'none' }}>
+          Log in
+        </NavLink>
+      </ul>
     )
   }
 
   return (
-    <nav>
-      <a className='logo-container' href='/' exact='true' activeclassname='active'>
-        <img src='images/Logo_Text.png' alt='Jazzify logo' />
-      </a>
-      {sessionLinks}
-    </nav>
+    <div className='nav-container'>
+      <header className='header-hover'>
+        <a className='logo-container' href='/' exact='true' activeclassname='active'>
+          <img src='images/Logo_Text.png' alt='Jazzify logo' />
+        </a>
+      </header>
+      <nav>
+        {sessionLinks}
+      </nav>
+    </div>
   );
 }
 
