@@ -48,7 +48,7 @@ const NavBar = () => {
     <div className='nav-container'>
       <header className='header-hover'>
         <a className='logo-container' href='/' exact='true' activeclassname='active'>
-          <img src='images/Logo_Text.png' alt='Jazzify logo' />
+          <img src='./images/Logo_Text.png' alt='Jazzify logo' />
         </a>
       </header>
       <nav>
