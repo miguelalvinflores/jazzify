@@ -74,10 +74,10 @@ const Splash = () => {
                                 </h1>
                             </div>
                             <h2 className="story-card-subtitle">
-                                Enjoy the greatest hits from Jazz's heaviest hitters such as Louie Armstrong, Duke Ellington, and more.
+                                Enjoy the greatest hits from Jazz's heaviest hitters at your comfort. Cancel anytime.
                             </h2>
                             <div className="story-signup-button">
-                                <h3 className="story-signup-text">Ready listen? Enter your email to create your account.</h3>
+                                <h3 className="story-signup-text">Ready to listen? Enter your email to create your account.</h3>
                                 <form className='email-form' onSubmit={onGetStartedClick}>
                                     <ul>{emailCheckErrors}</ul>
                                     <div className='email-form-lookup'>
@@ -102,24 +102,26 @@ const Splash = () => {
                     </div>
                 </article>
             </section>
-            <div className='card-spacer'></div>
-            <div className='story-card watchOnPC'>
-                <div className='story-card-container'>
-                    <div className='story-card-text'>
-                        <p className='type-element'>FOR RETURNING USERS</p>
-                        <div className='story-card-title-container'>
-                            <h1 className='story-card-title'>Enjoy your favorite jazz content.</h1>
+            {/* <div className='card-spacer'></div> */}
+            <section dir='ltr' className='story-section'>
+                <div className='story-card'>
+                    <div className='story-card-container'>
+                        <div className='story-card-text'>
+                            <p className='type-element'>FOR RETURNING USERS</p>
+                            <div className='story-card-title-container'>
+                                <h1 className='story-card-title'>Enjoy your favorite jazz content.</h1>
+                            </div>
+                            <h2 className='story-card-subtitle'>Dont be a square join up today!</h2>
                         </div>
-                        <h2 className='story-card-subtitle'>Dont be a square join up today!</h2>
-                    </div>
-                    <div className='story-card-img-container'>
-                        <img className='-card-img' src='images/Splash-Device_Screens.png' alt="Example Movie title panel" />
+                        <div className='story-card-img-container'>
+                            <img className='-card-img' src='images/Splash-Device_Screens.png' alt="Example Movie title panel" />
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className='splashfooter'>
-                {/* <Footer /> */}
-            </div>
+                <div className='splashfooter'>
+                    {/* <Footer /> */}
+                </div>
+            </section>
         </div>
     )
 };
