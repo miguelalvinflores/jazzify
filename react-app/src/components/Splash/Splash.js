@@ -3,6 +3,7 @@ import { useHistory } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import { checkEmail } from '../../store/session';
 import './Splash.css'
+import { Link } from 'react-router-dom';
 
 const Splash = () => {
     const user = useSelector((state) => state.session.user);
@@ -68,32 +69,28 @@ const Splash = () => {
                     <div className="hero-card">
                         <div className="hero-story-card-text">
                             <p className='type-element'>FOR NEW USERS</p>
-                            <div className='story-card-tilte-container'>
-                                <h1 className="story-card-title">
+                            <div className='hero-card-title-container'>
+                                <h1 className="hero-card-title">
                                     Jazz Music delivered to you for free.
                                 </h1>
                             </div>
-                            <h2 className="story-card-subtitle">
+                            <h2 className="hero-card-subtitle">
                                 Enjoy the greatest hits from Jazz's heaviest hitters at your comfort. Cancel anytime.
                             </h2>
                             <div className="story-signup-button">
                                 <h3 className="story-signup-text">Ready to listen? Enter your email to create your account.</h3>
-                                <form className='email-form' onSubmit={onGetStartedClick}>
-                                    <ul>{emailCheckErrors}</ul>
-                                    <div className='email-form-lookup'>
-                                        <div id='float-label'>
-                                            <input
-                                                type="email"
-                                                name="email"
-                                                id='email_hero'
-                                                onChange={(e) => handleTextChange(e.target.value)}
-                                                required
-                                            />
-                                            <label className={ isActive ? "Active" : ""} htmlFor='email_hero'>Email address</label>
-                                        </div>
-                                        <button className='hero-btn-red' type='submit'>Get Started {'>'}</button>
+                                <div className='signup-container'>
+                                    <div className='signup-btn-container'>
+                                        <Link to='/sign-up' className='signup-card'>
+                                            <div className='signup-btn'>
+                                                <span>
+                                                    Sign up now
+                                                </span>
+                                            </div>
+                                            <div className='btn-focus'></div>
+                                        </Link>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                         <div className='hero-img-container'>
@@ -104,20 +101,26 @@ const Splash = () => {
             </section>
             {/* <div className='card-spacer'></div> */}
             <section dir='ltr' className='story-section'>
-                <div className='story-card'>
-                    <div className='story-card-container'>
-                        <div className='story-card-text'>
-                            <p className='type-element'>FOR RETURNING USERS</p>
-                            <div className='story-card-title-container'>
-                                <h1 className='story-card-title'>Enjoy your favorite jazz content.</h1>
-                            </div>
-                            <h2 className='story-card-subtitle'>Dont be a square join up today!</h2>
+                <article color='#1ed760' className='story-article'>
+                    <div className='story-card'>
+                        <p className='story-type-element'>FOR RETURNING USERS</p>
+                        <h1 className='story-card-title'>Enjoy your favorite jazz content.</h1>
+                        <div className='story-card-subheader'>
+                            <h2 className='story-card-subtitle'>Get back to your favorite playlists</h2>
                         </div>
-                        <div className='story-card-img-container'>
-                            <img className='-card-img' src='images/Splash-Device_Screens.png' alt="Example Movie title panel" />
+                        <div className='login-container'>
+                            <div className='login-btn-container'>
+                                <Link to='/login' className='login-card'>
+                                    <div className='login-btn'>
+                                        <span>
+                                            Login to Jazzify
+                                        </span>
+                                    </div>
+                                </Link>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </article>
                 <div className='splashfooter'>
                     {/* <Footer /> */}
                 </div>
