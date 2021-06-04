@@ -1,62 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useHistory } from 'react-router';
-import { useDispatch, useSelector } from 'react-redux';
-import { checkEmail } from '../../store/session';
+import { useSelector } from 'react-redux';
 import './Splash.css'
 import { Link } from 'react-router-dom';
 
 const Splash = () => {
     const user = useSelector((state) => state.session.user);
-    const [email, setEmail] = useState('');
-    const [errorArr, setErrorArr] = useState([]);
-    const [isActive, setIsActive] = useState(false);
-    const dispath = useDispatch();
     const history = useHistory();
-
-    const handleTextChange = (text) => {
-        setEmail(text);
-
-        if (text !== '') {
-            setIsActive(true);
-        } else {
-            setIsActive(false);
-        }
-    }
-
-    const onGetStartedClick = async (e) => {
-        e.preventDefault();
-        let result = await dispath(checkEmail(email));
-
-        if (result.errors) {
-            let errorList = [];
-
-            for (let err in result.errors) {
-                errorList.push(result.errors[err].split(':'[1]));
-            }
-            setErrorArr(errorList);
-        } else {
-            if (result.email) {
-                history.push({
-                    pathname: '/login',
-                    state: {
-                        userEmail: result.email,
-                    },
-                });
-            } else {
-                history.push({
-                    pathname: '/sign-up',
-                    state: {
-                        userEmail: email,
-                    },
-                });
-            }
-        }
-
-    };
-
-    let emailCheckErrors = errorArr.map((err) => {
-        return <li key={err}>{err}</li>
-    })
 
     if (user) {
         history.push('/browse')

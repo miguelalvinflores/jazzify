@@ -1,0 +1,38 @@
+main{
+    display: block;
+}
+
+.index-signup{
+    max-width: 450px;
+    margin: 0px auto;
+    padding-bottom: 130px;
+}
+
+.signup-header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .signup-header-container {
+        padding: 40px 0px 32px;
+    }
+}
+
+.signup-header-logo-container {
+    text-align: center;
+}
+
+.signup-logo-img {
+    fill: var(--decorative-base,#000000);
+    stroke: transparent;
+    height: 27px;
+    width:auto;
+    
+}
+
+@media (min-width: 992px) {
+    .signup-logo-img {
+        height: 40px;
+    }
+}
