@@ -78,7 +78,7 @@ const Splash = () => {
                                 Enjoy the greatest hits from Jazz's heaviest hitters at your comfort. Cancel anytime.
                             </h2>
                             <div className="story-signup-button">
-                                <h3 className="story-signup-text">Ready to listen? Enter your email to create your account.</h3>
+                                <h3 className="story-signup-text">Ready to listen? Click below to create your account.</h3>
                                 <div className='signup-container'>
                                     <div className='signup-btn-container'>
                                         <Link to='/sign-up' className='signup-card'>

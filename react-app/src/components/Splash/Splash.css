@@ -234,6 +234,10 @@ p.type-element {
     text-decoration: none !important;
 }
 
+.signup-btn:hover{
+    opacity: 85%;
+}
+
 .btn-focus {
     display: block;
     position: absolute;
@@ -478,6 +482,15 @@ p.type-element {
     }
 }
 
+@media (min-width: 1200px){
+    .login-container {
+        margin: 80px 50px ;
+
+    }
+}
+
+
+
 .login-card {
     box-sizing: border-box;
     font-family: spotify-circular, Helvetica, Arial, sans-serif;
@@ -507,6 +520,10 @@ p.type-element {
     .login-card {
         width: auto;
     }
+}
+
+.login-card:hover {
+    opacity: 85%;
 }
 
 .login-btn {
