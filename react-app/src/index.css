@@ -10,7 +10,9 @@ html {
   padding: 0;
   /* background: #141414; */
 }
-
+main {
+  color:black;
+}
 #root {
     width: 100%;
     z-index: -1;

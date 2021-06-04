@@ -9,8 +9,12 @@ const LoginForm = () => {
   const [errors, setErrors] = useState([]);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [emailActive, setEmailActive] = useState(false);
+  const [passwordActive, setPasswordActive] = useState(false);
+
   const user = useSelector(state => state.session.user);
   const dispatch = useDispatch();
+
 
   const onLogin = async (e) => {
     e.preventDefault();
@@ -22,6 +26,7 @@ const LoginForm = () => {
 
   const updateEmail = (e) => {
     setEmail(e.target.value);
+
   };
 
   const updatePassword = (e) => {
@@ -45,34 +50,50 @@ const LoginForm = () => {
           </Link>
         </div>
       </div>
-      <form onSubmit={onLogin}>
-        <div>
-          {errors.map((error) => (
-            <div>{error}</div>
-          ))}
+      <div className='login-container-fluid' >
+        <div className='login-content'>
+          <div className='login-row'>
+            <div className='login-txt-center col-12'>
+              <h1 id='login-to-continue'>To continue, log in to Jazzify</h1>
+            </div>
+          </div>
+
+          <form onSubmit={onLogin}>
+            <div className='login-row'>
+              {errors.map((error) => (
+                <div>{error}</div>
+              ))}
+            </div>
+            <div className='login-row'>
+              <div className='col-12'>
+                <label className='login-label' htmlFor="email">Email address</label>
+                <input
+                  className='login-form-control'
+                  name="email"
+                  type="text"
+                  placeholder="Email"
+                  value={email}
+                  onChange={updateEmail}
+                />
+              </div>
+            </div>
+            <div className='login-row'>
+              <div className='col-12'>
+                <label className='login-label' htmlFor="password">Password</label>
+                <input
+                  className='login-form-control'
+                  name="password"
+                  type="password"
+                  placeholder="Password"
+                  value={password}
+                  onChange={updatePassword}
+                />
+              </div>
+            </div>
+              <button type="submit">Login</button>
+          </form>
         </div>
-        <div>
-          <label htmlFor="email">Email</label>
-          <input
-            name="email"
-            type="text"
-            placeholder="Email"
-            value={email}
-            onChange={updateEmail}
-          />
-        </div>
-        <div>
-          <label htmlFor="password">Password</label>
-          <input
-            name="password"
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={updatePassword}
-          />
-          <button type="submit">Login</button>
-        </div>
-      </form>
+      </div>
     </main>
   );
 };
