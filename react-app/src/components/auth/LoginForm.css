@@ -1,0 +1,12 @@
+.header{
+    border-bottom: 1px solid #d9dadc;
+    padding: 25px 0 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.login-logo-img {
+    display: inline-block;
+    max-width: 100%;
+    width: 200px;
+}
