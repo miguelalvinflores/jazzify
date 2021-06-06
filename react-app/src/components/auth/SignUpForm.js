@@ -93,7 +93,7 @@ const SignUpForm = () => {
             </h2>
           </div>
           <form className='signup-form' onSubmit={onSignUp}>
-            <ul>{signupErrors}</ul>
+            <ul className='signup-errors'>{signupErrors}</ul>
             <div className='sign-up-form-input'>
               <div className='form-input-label'>
                 <label>What would you prefer we call you?</label>

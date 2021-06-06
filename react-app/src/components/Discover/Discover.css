@@ -1,0 +1,9 @@
+#main {
+    isolation: isolate;
+    width: 100%;
+    z-index: 0;
+}
+#main, .Root{
+    height: 100%;
+    position: relative;
+}

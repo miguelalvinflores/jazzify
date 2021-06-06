@@ -9,7 +9,7 @@ const Splash = () => {
     const history = useHistory();
 
     if (user) {
-        history.push('/browse')
+        history.push('/discover')
     }
 
     return (

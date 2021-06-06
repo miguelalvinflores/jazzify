@@ -9,8 +9,6 @@ const LoginForm = () => {
   const [errors, setErrors] = useState([]);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [emailActive, setEmailActive] = useState(false);
-  const [passwordActive, setPasswordActive] = useState(false);
 
   const user = useSelector(state => state.session.user);
   const dispatch = useDispatch();
@@ -61,7 +59,7 @@ const LoginForm = () => {
           <form onSubmit={onLogin}>
             <div className='login-row'>
               {errors.map((error) => (
-                <div>{error}</div>
+                <div className='error-row'>{error}</div>
               ))}
             </div>
             <div className='login-row'>
@@ -89,8 +87,12 @@ const LoginForm = () => {
                   onChange={updatePassword}
                 />
               </div>
+            </div >
+            <div className='login-row row-submit'>
+              <div className='col-12'>
+                <button className='login-btn' type="submit">Login</button>
+              </div>
             </div>
-              <button type="submit">Login</button>
           </form>
         </div>
       </div>

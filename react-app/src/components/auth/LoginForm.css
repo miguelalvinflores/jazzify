@@ -84,3 +84,46 @@ label.login-label {
     outline: 0;
     box-shadow: none;
 }
+
+.row-submit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login-row:last-child {
+    margin-bottom: 0;
+}
+
+.login-btn {
+    margin-bottom: 0;
+    font-weight: 700;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border-width: 0;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    padding: 16px 14px 18px;
+    color: #fff;
+    background-color: #137a37;
+}
+
+.login-btn:hover {
+    background-color: #20ec68;
+
+}
+
+.error-row{
+    color: red
+}

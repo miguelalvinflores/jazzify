@@ -243,3 +243,6 @@ main{
 .login-link-container a {
     color: rgb(29, 185, 84);
 }
+ .signup-errors{
+     color:red;
+ }
