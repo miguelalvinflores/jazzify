@@ -150,18 +150,22 @@ p.type-element {
 }
 .signup-container {
     display: block;
-    margin: 20px 0px;
+    margin: 20px 20px;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
     .signup-container {
         margin: 35px 0px 0px;
+        text-align: center;
     }
 }
 
 @media (min-width: 768px) {
     .signup-btn-container {
         display: inline-block;
+        text-align: center;
+        margin:20px;
     }
 }
 
@@ -190,10 +194,13 @@ p.type-element {
     width: 100%;
     box-sizing: border-box;
     text-decoration: none;
+    text-align: center;
 }
 @media (min-width: 768px) {
     .signup-card {
-        width: auto;
+        width: 100%;
+        text-align: center;
+        margin: auto;
     }
 }
 
@@ -232,6 +239,7 @@ p.type-element {
     --decorative-base: #FFFFFF !important;
     --decorative-subdued: #FFFFFF !important;
     text-decoration: none !important;
+    text-align: center;
 }
 
 .signup-btn:hover{
@@ -255,6 +263,15 @@ p.type-element {
 
 .demo {
     margin-left: 25px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; */
+}
+@media (max-width: 768px) {
+    .demo {
+        margin: auto;
+    }
 }
 
 .hero-img-container {

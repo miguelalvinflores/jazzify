@@ -58,6 +58,7 @@ const Splash = () => {
                                                 <div className='signup-btn'>
                                                     Demo the site
                                                 </div>
+                                                <div className='btn-focus'></div>
                                             </button>
                                         </div>
                                     </div>

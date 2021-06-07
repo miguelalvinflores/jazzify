@@ -5,6 +5,7 @@ import PlayingBar from './PlayingBar/PlayingBar';
 import MainView from './MainView/MainView';
 import './Discover.css'
 const Discover = () => {
+    
 
     return (
         <div id='main' >
