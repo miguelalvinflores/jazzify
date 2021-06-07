@@ -1,0 +1,60 @@
+.Root__nav-bar {
+    background-color: #000;
+    grid-area: nav-bar;
+    /* width: 100%; */
+    z-index: 3;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    position: relative;
+}
+
+.nav-bar__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+    cursor: default;
+    flex: 1;
+    flex-direction: column;
+    min-height: 0;
+    padding-top: 24px;
+    user-select: none;
+    width: 100%;
+    -webkit-box-direction: normal;
+    display: flex;
+}
+
+.logo-container {
+    -webkit-box-direction: normal;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: justify;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: space-between;
+}
+
+.disc-logo-link {
+    position: relative;
+    -webkit-box-flex: 1;
+    border: 0;
+    flex: 1;
+    margin-bottom: 18px;
+    padding: 0 24px;
+}
+
+.navigation-container {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    list-style: none;
+}
+
+.nav-home {
+    border: 0;
+    margin: 0;
+    vertical-align: baseline;
+    padding: 0 8px;
+}
