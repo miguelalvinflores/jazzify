@@ -1,0 +1,17 @@
+.Root__main-view {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    position: relative;
+    grid-area: main-view;
+    width: 100%;
+}
+
+.main-view-container {
+    -webkit-box-flex: 1;
+    flex: 1;
+    min-height: 0;
+    position: relative;
+}
