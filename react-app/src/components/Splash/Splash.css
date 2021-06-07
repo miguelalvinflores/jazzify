@@ -253,6 +253,10 @@ p.type-element {
     border: 3px solid transparent;
 }
 
+.demo {
+    margin-left: 25px;
+}
+
 .hero-img-container {
     width: 100%;
     height: 100%;

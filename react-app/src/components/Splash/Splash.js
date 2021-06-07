@@ -1,16 +1,27 @@
 import React from 'react';
 import { useHistory } from 'react-router';
-import { useSelector } from 'react-redux';
-import './Splash.css'
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+
+import { login } from "../../store/session";
+import './Splash.css'
 import NavBar from "../NavBar";
 const Splash = () => {
     const user = useSelector((state) => state.session.user);
     const history = useHistory();
+    const dispatch = useDispatch();
 
     if (user) {
         history.push('/discover')
     }
+
+    const demoLogin = async (e) => {
+        e.preventDefault();
+        const data = await dispatch(login("demo@aa.io", "password"));
+        // if (data.errors) {
+        //   setErrors(data.errors);
+        // }
+      };
 
     return (
         <main>
@@ -41,6 +52,13 @@ const Splash = () => {
                                                 </div>
                                                 <div className='btn-focus'></div>
                                             </Link>
+                                        </div>
+                                        <div className='signup-btn-container demo' >
+                                            <button className='signup-card' on onClick={demoLogin}>
+                                                <div className='signup-btn'>
+                                                    Demo the site
+                                                </div>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
