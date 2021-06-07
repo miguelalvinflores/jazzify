@@ -17,9 +17,15 @@ def seed_artists():
         image_url='https://m.media-amazon.com/images/I/81QpdPHQeEL._SS500_.jpg',
     )
 
+    artist4 = Artist(
+        artist_name="Billie Holiday and her Orchestra",
+        image_url='https://images-na.ssl-images-amazon.com/images/I/513REbiChRL._AC_.jpg'
+    )
+
     db.session.add(artist1)
     db.session.add(artist2)
     db.session.add(artist3)
+    db.session.add(artist4)
     db.session.commit()
     # artist1 = Album(
     #     artist_name="",

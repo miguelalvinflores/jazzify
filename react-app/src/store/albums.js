@@ -15,13 +15,25 @@ const getAlbums = (allAlbums) => {
     };
 };
 
-export const retriveAlbums = () => async (dispatch) => {
+const normalize = (albumList) => {
+    let normAlbums = {};
+    for (let i = 0; i < albumList.length; i++) {
+        let album = albumList[i];
+        normAlbums[album.id] = album;
+    }
+    return normAlbums;
+};
+
+export const retrieveAlbums = () => async (dispatch) => {
+    // console.log('BEFORE FETCH')
     let res = await fetch(`/api/albums/allAlbums`);
+    // console.log('AFTER FETCH', res.json)
 
     if (res.ok) {
         const allAlbums = await res.json();
 
-        dispatch(getAlbums(allAlbums))
+        const albums = normalize(allAlbums.albums)
+        dispatch(getAlbums(albums))
     }
 
     return res;

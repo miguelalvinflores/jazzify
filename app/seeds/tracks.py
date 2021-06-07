@@ -210,6 +210,88 @@ def seed_tracks():
     db.session.commit()
 
 
+    track1 = Track(
+        song_title="I Can't Get Started",
+        image_url='https://ia800108.us.archive.org/14/items/78_when-a-woman-loves-a-man_billie-holiday-and-her-orchestra-billie-holiday-buck-clayt_gbia0031202/78_when-a-woman-loves-a-man_billie-holiday-and-her-orchestra-billie-holiday-buck-clayt_gbia0031202_itemimage.jpg',
+        source_url='https://ia800108.us.archive.org/14/items/78_when-a-woman-loves-a-man_billie-holiday-and-her-orchestra-billie-holiday-buck-clayt_gbia0031202/03%20-%20I%20Can%27t%20Get%20Started%20-%20Billie%20Holiday%20and%20her%20Orchestra.mp3',
+        album_id='4',
+        artist_id='4',
+    )
+
+    track2 = Track(
+        song_title="When a Woman Loves a Man",
+        image_url='https://ia800108.us.archive.org/14/items/78_when-a-woman-loves-a-man_billie-holiday-and-her-orchestra-billie-holiday-buck-clayt_gbia0031202/78_when-a-woman-loves-a-man_billie-holiday-and-her-orchestra-billie-holiday-buck-clayt_gbia0031202_itemimage.jpg',
+        source_url='https://ia800108.us.archive.org/14/items/78_when-a-woman-loves-a-man_billie-holiday-and-her-orchestra-billie-holiday-buck-clayt_gbia0031202/04%20-%20When%20a%20Woman%20Loves%20a%20Man%20-%20Billie%20Holiday%20and%20her%20Orchestra-restored.mp3',
+        album_id='4',
+        artist_id='4',
+    )
+
+    track3 = Track(
+        song_title="I've Got A Man",
+        image_url='https://ia800108.us.archive.org/14/items/78_when-a-woman-loves-a-man_billie-holiday-and-her-orchestra-billie-holiday-buck-clayt_gbia0031202/78_when-a-woman-loves-a-man_billie-holiday-and-her-orchestra-billie-holiday-buck-clayt_gbia0031202_itemimage.jpg',
+        source_url='https://ia800108.us.archive.org/14/items/78_when-a-woman-loves-a-man_billie-holiday-and-her-orchestra-billie-holiday-buck-clayt_gbia0031202/05%20-%20%28I%27ve%20Got%20A%20Man%2C%20Crazy%20%20-%20Billie%20Holiday%20and%20her%20Orchestra.mp3',
+        album_id='4',
+        artist_id='4',
+    )
+
+    track4 = Track(
+        song_title="A Sailboat in the Moonlight",
+        image_url='https://ia800108.us.archive.org/14/items/78_when-a-woman-loves-a-man_billie-holiday-and-her-orchestra-billie-holiday-buck-clayt_gbia0031202/78_when-a-woman-loves-a-man_billie-holiday-and-her-orchestra-billie-holiday-buck-clayt_gbia0031202_itemimage.jpg',
+        source_url='https://ia800108.us.archive.org/14/items/78_when-a-woman-loves-a-man_billie-holiday-and-her-orchestra-billie-holiday-buck-clayt_gbia0031202/06%20-%20A%20Sailboat%20in%20the%20Moonlight%20-%20Billie%20Holiday%20and%20her%20Orchestra.mp3',
+        album_id='4',
+        artist_id='4',
+    )
+
+    db.session.add(track1)
+    db.session.add(track2)
+    db.session.add(track3)
+    db.session.add(track4)
+
+    db.session.commit()
+
+    track1 = Track(
+        song_title="Tiger Rag",
+        image_url='https://ia801008.us.archive.org/10/items/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403_itemimage.jpg',
+        source_url='https://ia801008.us.archive.org/10/items/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403/01%20-%20Tiger%20Rag%20-%20Louis%20Armstrong%20and%20his%20Orchestra.mp3',
+        album_id='5',
+        artist_id='1',
+    )
+
+    track2 = Track(
+        song_title="St. Louis Blues",
+        image_url='https://ia801008.us.archive.org/10/items/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403_itemimage.jpg',
+        source_url='https://ia801008.us.archive.org/10/items/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403/02%20-%20St.%20Louis%20Blues%20-%20Louis%20Armstrong%20and%20his%20Orchestra.mp3',
+        album_id='5',
+        artist_id='1',
+    )
+
+    track3 = Track(
+        song_title="Song of the Vipers",
+        image_url='https://ia801008.us.archive.org/10/items/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403_itemimage.jpg',
+        source_url='https://ia801008.us.archive.org/10/items/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403/03%20-%20Song%20of%20the%20Vipers%20-%20Louis%20Armstrong%20and%20his%20Orchestra.mp3',
+        album_id='5',
+        artist_id='1',
+    )
+
+    track4 = Track(
+        song_title="Will You, Won't You Be My Babe",
+        image_url='https://ia801008.us.archive.org/10/items/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403_itemimage.jpg',
+        source_url='https://ia801008.us.archive.org/10/items/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403/04%20-%20Will%20You%2C%20Won%27t%20You%20Be%20My%20Babe%20-%20Louis%20Armstrong%20and%20his%20Orchestra.mp3',
+        album_id='5',
+        artist_id='1',
+    )
+
+    track5 = Track(
+        song_title="On the Sunny Side of the Street",
+        image_url='https://ia801008.us.archive.org/10/items/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403_itemimage.jpg',
+        source_url='https://ia801008.us.archive.org/10/items/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403/05%20-%20On%20the%20Sunny%20Side%20of%20t%20-%20Louis%20Armstrong%20and%20his%20Orchestra.mp3',
+        album_id='5',
+        artist_id='1',
+    )
+
+
+
+
     # track3 = Track(
     #     song_title="",
     #     image_url='',

@@ -18,10 +18,23 @@ def seed_albums():
         image_url='https://ia601603.us.archive.org/12/items/78_boogie-woogie_harry-james-and-the-boogie-woogie-trio-james-pete-johnson-eddie-dough_gbia0005675/78_boogie-woogie_harry-james-and-the-boogie-woogie-trio-james-pete-johnson-eddie-dough_gbia0005675_itemimage.jpg',
         artist_id='3',
     )
+    album4 = Album(
+        album_title="Billie Holiday Vol. 1",
+        image_url='https://ia800108.us.archive.org/14/items/78_when-a-woman-loves-a-man_billie-holiday-and-her-orchestra-billie-holiday-buck-clayt_gbia0031202/78_when-a-woman-loves-a-man_billie-holiday-and-her-orchestra-billie-holiday-buck-clayt_gbia0031202_itemimage.jpg',
+        artist_id='3',
+    )
+
+    album5 = Album(
+        album_title="St. Louis Blues",
+        image_url='https://ia801008.us.archive.org/10/items/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403_itemimage.jpg',
+        artist_id='num',
+    )
+
 
     db.session.add(album1)
     db.session.add(album2)
     db.session.add(album3)
+    db.session.add(album4)
     db.session.commit()
 
     # album1 = Album(
