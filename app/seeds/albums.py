@@ -27,7 +27,7 @@ def seed_albums():
     album5 = Album(
         album_title="St. Louis Blues",
         image_url='https://ia801008.us.archive.org/10/items/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403_itemimage.jpg',
-        artist_id='num',
+        artist_id='1',
     )
 
 
@@ -35,6 +35,7 @@ def seed_albums():
     db.session.add(album2)
     db.session.add(album3)
     db.session.add(album4)
+    db.session.add(album5)
     db.session.commit()
 
     # album1 = Album(

@@ -1,4 +1,5 @@
 react-app/node_modules
+!react-app/node_modules/react-resize-panel
 .venv
 Pipfile
 Pipfile.lock
