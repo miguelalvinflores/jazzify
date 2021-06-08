@@ -25,17 +25,24 @@ def seed_albums():
     )
 
     album5 = Album(
-        album_title="St. Louis Blues",
+        album_title="Louis Armstrong Paris 1934 Spotlight Series",
         image_url='https://ia801008.us.archive.org/10/items/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403/78_st-louis-blues_louis-armstrong-and-his-orchestra-original-dixieland-jazz-band_gbia0039403_itemimage.jpg',
         artist_id='1',
     )
 
+    album6 = Album(
+        album_title="Duke Ellington Plays the Blues",
+        image_url='https://ia800601.us.archive.org/20/items/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273_itemimage.jpg',
+        artist_id='2',
+    )
 
     db.session.add(album1)
     db.session.add(album2)
     db.session.add(album3)
     db.session.add(album4)
     db.session.add(album5)
+    db.session.add(album6)
+
     db.session.commit()
 
     # album1 = Album(

@@ -289,8 +289,96 @@ def seed_tracks():
         artist_id='1',
     )
 
+    db.session.add(track1)
+    db.session.add(track2)
+    db.session.add(track3)
+    db.session.add(track4)
+    db.session.add(track5)
 
+    db.session.commit()
 
+    track1 = Track(
+        song_title="Royal Garden Blues",
+        image_url='https://ia800601.us.archive.org/20/items/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273_itemimage.jpg',
+        source_url='https://ia600601.us.archive.org/20/items/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273/01%20-%20Royal%20Garden%20Blues%20-%20Duke%20Ellington%20and%20his%20Orchestra.mp3',
+        album_id='6',
+        artist_id='2',
+    )
+
+    track2 = Track(
+        song_title="Frankie and Johnie",
+        image_url='https://ia800601.us.archive.org/20/items/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273_itemimage.jpg',
+        source_url='https://ia600601.us.archive.org/20/items/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273/02%20-%20Frankie%20and%20Johnnie%20-%20Duke%20Ellington%20and%20his%20Rhythm.mp3',
+        album_id='6',
+        artist_id='2',
+    )
+
+    track3 = Track(
+        song_title="Memphis Blues",
+        image_url='https://ia800601.us.archive.org/20/items/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273_itemimage.jpg',
+        source_url='https://ia800601.us.archive.org/20/items/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273/03%20-%20Memphis%20Blues%20-%20Duke%20Ellignton%20and%20his%20Orchestra.mp3',
+        album_id='6',
+        artist_id='2',
+    )
+
+    track4 = Track(
+        song_title="Pretty Woman",
+        image_url='https://ia800601.us.archive.org/20/items/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273_itemimage.jpg',
+        source_url='https://ia800601.us.archive.org/20/items/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273/04%20-%20Pretty%20Woman%20-%20Duke%20Ellington%20and%20his%20Orchestra.mp3',
+        album_id='6',
+        artist_id='2',
+    )
+
+    track5 = Track(
+        song_title="Beale Street Blues",
+        image_url='https://ia800601.us.archive.org/20/items/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273_itemimage.jpg',
+        source_url='https://ia800601.us.archive.org/20/items/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273/05%20-%20Beale%20Street%20Blues%20-%20Duke%20Ellington%20and%20his%20Orchestra.mp3',
+        album_id='6',
+        artist_id='2',
+    )
+
+    track6 = Track(
+        song_title="Transblucency",
+        image_url='https://ia800601.us.archive.org/20/items/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273_itemimage.jpg',
+        source_url='https://ia800601.us.archive.org/20/items/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273/06%20-%20Transblucency%20%28A%20Blue%20F%20-%20Duke%20Ellington%20and%20his%20Orchestra.mp3',
+        album_id='6',
+        artist_id='2',
+    )
+
+    track7 = Track(
+        song_title="St. Louis Blues",
+        image_url='https://ia800601.us.archive.org/20/items/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273_itemimage.jpg',
+        source_url='https://ia800601.us.archive.org/20/items/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273/07%20-%20St.%20Louis%20Blues%20-%20Duke%20Ellington%20and%20his%20Orchestra.mp3',
+        album_id='6',
+        artist_id='2',
+    )
+
+    track8 = Track(
+        song_title="Drawing Room Blues",
+        image_url='https://ia800601.us.archive.org/20/items/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273_itemimage.jpg',
+        source_url='https://ia800601.us.archive.org/20/items/78_frankie-and-johnnie_duke-ellington-and-his-orchestra-clarence-and-spencer-williams_gbia0020273/08%20-%20Drawing%20Room%20Blues%20-%20Duke%20Ellington%20and%20Billy%20Strayhorn.mp3',
+        album_id='6',
+        artist_id='2',
+    )
+
+    db.session.add(track1)
+    db.session.add(track2)
+    db.session.add(track3)
+    db.session.add(track4)
+    db.session.add(track5)
+    db.session.add(track6)
+    db.session.add(track7)
+    db.session.add(track8)
+
+    db.session.commit()
+
+    track1 = Track(
+        song_title="",
+        image_url='https://ia800604.us.archive.org/21/items/78_boogie-woogie-music-vol.-2_meade-lux-lewis-shayne_gbia0003369/78_boogie-woogie-music-vol.-2_meade-lux-lewis-shayne_gbia0003369_itemimage.jpg',
+        source_url='',
+        album_id='7',
+        artist_id='num',
+    )
 
     # track3 = Track(
     #     song_title="",

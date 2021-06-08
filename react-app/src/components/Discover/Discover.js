@@ -1,19 +1,19 @@
 import React from 'react';
-import ResizePanel from "react-resize-panel";
 import DiscoverNav from './DiscoverNav/DiscoverNav';
 import PlayingBar from './PlayingBar/PlayingBar';
 import MainView from './MainView/MainView';
 import './Discover.css'
 const Discover = () => {
-    
+
 
     return (
         <div id='main' >
             <div className='Root'>
                 <div className='Root__top-container'>
-                    <ResizePanel direction='e'>
+                    <div className='disc-left-nav'>
                         <DiscoverNav />
-                    </ResizePanel>
+                    </div>
+
                     <PlayingBar />
                     <MainView />
                 </div>
