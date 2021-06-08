@@ -1,7 +1,7 @@
 const GET_ALBUMS = 'album/GET_ALBUMS';
 const THIS_ALBUM = 'album/THIS_ALBUM';
 
-const thisAlbum = (album) => {
+export const thisAlbum = (album) => {
     return {
         type: THIS_ALBUM,
         payload: album,
