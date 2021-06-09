@@ -13,6 +13,9 @@
     transition: background-color .3s ease;
     width: 100%;
 }
+.album-container:hover{
+    background: #292929;
+}
 
 .album-content{
     border: 0;
@@ -64,23 +67,26 @@
     bottom: 8px;
     box-shadow: 0 8px 8px rgb(0 0 0 / 30%);
     opacity: 0;
-    pointer-events: none;
+    /* pointer-events: none; */
     position: absolute;
     transform: translateY(8px);
     transition: all .3s ease;
     z-index: 2;
     justify-self: flex-end;
     margin-left:10px;
+    /* margin-bottom: 5px; */
+    /* cursor: pointer; */
 }
-[dir=ltr] .album-play-btn-container {
+/* [dir=ltr] .album-play-btn-container {
         right: 8px;
 
-}
+} */
 
 .album-container:hover .album-play-btn-container {
     opacity: 1;
     margin: 10px;
     z-index: 10;
+    /* cursor: pointer; */
 }
 button.album-play-btn {
     --size: 40px;
@@ -100,13 +106,25 @@ button.album-play-btn {
     color: #fff;
 }
 
-/* .album-container button {
+.album-container button {
     position: relative;
     z-index: 1;
-} */
+}
 
 .album-play-btn-container:hover {
-    z-index: 40;
-    width: 50px;
-    height: 50px;
+    /* z-index: 40; */
+    /* width: 45px;
+    height: 45px; */
+    /* cursor: pointer; */
+
+}
+
+.album-play-btn-container:hover > button {
+    width: 45px;
+    height: 45px;
+    /* margin: 5px; */
+    cursor: pointer;
+    left: -2.5px;
+    top: 2.5px;
+    background-color: #25ca5f;
 }

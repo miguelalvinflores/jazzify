@@ -54,7 +54,7 @@ const Splash = () => {
                                             </Link>
                                         </div>
                                         <div className='signup-btn-container demo' >
-                                            <button className='signup-card' on onClick={demoLogin}>
+                                            <button className='signup-card' onClick={demoLogin}>
                                                 <div className='signup-btn'>
                                                     Demo the site
                                                 </div>
