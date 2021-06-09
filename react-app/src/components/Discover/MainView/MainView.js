@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import AlbumDisplay from './AlbumDisplay/AlbumDisplay'
 import * as albumActions from '../../../store/albums'
+import * as artistActions from '../../../store/artists'
 
 import './MainView.css'
 
@@ -17,6 +18,7 @@ const MainView = () => {
         if (user) {
             // console.log('in IF of USE EFFECT')
             dispatch(albumActions.retrieveAlbums());
+            dispatch(artistActions.retrieveArtists());
         }
     }, [dispatch, user])
     return (

@@ -9,3 +9,10 @@ class Artist(db.Model):
 
     albums = db.relationship('Album', backref='artist', lazy="joined")
     tracks = db.relationship('Track', backref='artist', lazy='joined')
+
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'artist_name': self.artist_name,
+            'image_url': self.image_url
+        }

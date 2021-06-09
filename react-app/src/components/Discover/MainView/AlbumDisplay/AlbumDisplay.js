@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import * as albumActions from '../../../../store/albums'
 
 import './AlbumDisplay.css'
@@ -7,11 +8,12 @@ function AlbumDisplay({album}) {
     // console.log('ALBUM', album)
     const dispatch = useDispatch();
     const currentAlbum = useSelector((state) => state.albums.album)
-
+    const artists = useSelector((state) => state.artists.allArtists)
     const playAlbum = () => {
         console.log('PLAY ALBUM', album)
         dispatch(albumActions.thisAlbum(album))
     };
+
 
     if(currentAlbum) {
 
@@ -30,6 +32,16 @@ function AlbumDisplay({album}) {
                                 <polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"></polygon>
                             </svg>
                         </button>
+                    </div>
+                </div>
+                <div className='album-text-container'>
+                    <Link className='album-text-link' to={`albums/${album.id}`} >
+                        <div className='album-text-title'>
+                            {album.album_title}
+                        </div>
+                    </Link>
+                    <div className='album-text-artist'>
+                        <span>{artists[album.id]?.artist_name}</span>
                     </div>
                 </div>
             </div>
