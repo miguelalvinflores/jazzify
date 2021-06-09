@@ -1,23 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import * as albumActions from '../../../../store/albums'
+import * as trackActions from '../../../../store/tracks'
 
 import './AlbumDisplay.css'
 function AlbumDisplay({album}) {
     // console.log('ALBUM', album)
     const dispatch = useDispatch();
-    const currentAlbum = useSelector((state) => state.albums.album)
+    // const currentAlbum = useSelector((state) => state.albums.album)
     const artists = useSelector((state) => state.artists.allArtists)
+    // const albumTracksList = useSelector((state) => state.tracks.albumTracks)
+    const albumTracks = useSelector((state) => state.tracks.albumTracks[album.album_title])
     const playAlbum = () => {
-        console.log('PLAY ALBUM', album)
+        // console.log('PLAY ALBUM', album)
         dispatch(albumActions.thisAlbum(album))
+        // console.log("ALBUM TRACK LIST", albumTracksList)
+        dispatch(trackActions.retrieveTracksByAlbum(album))
+
     };
 
+    useEffect(() => {
 
-    if(currentAlbum) {
+            dispatch(trackActions.playAlbum(albumTracks))
 
-    }
+    }, [dispatch, albumTracks])
 
     return(
         <div className='album-container'>
