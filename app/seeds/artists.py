@@ -2,13 +2,13 @@ from app.models import db, Artist
 
 def seed_artists():
     artist1 = Artist(
-        artist_name="Louis Armstrong And His Orchcestra",
+        artist_name="Louis Armstrong And His Orchestra",
         image_url='https://cdn2.jazztimes.com/2020/09/louis-armstrong-with-luis-russell-band-800x519.jpg',
 
     )
 
     artist2 = Artist(
-        artist_name="Duke Ellington And His Famous Orchcestra",
+        artist_name="Duke Ellington And His Famous Orchestra",
         image_url='https://cdn.britannica.com/73/201073-050-7A256B9D/big-band-jazz-greats-Duke-Ellington-Otto.jpg',
     )
 

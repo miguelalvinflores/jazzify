@@ -16,7 +16,8 @@ const Discover = () => {
                         <DiscoverNav />
                     </div>
                     {tracksQueue && (
-                        <PlayingBar />
+                        <PlayingBar
+                        tracksQueue={tracksQueue} />
                     )}
                     <MainView />
                 </div>

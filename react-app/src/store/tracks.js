@@ -27,7 +27,7 @@ export const playAlbum = (albumTracks) => async (dispatch) => {
 }
 
 const initialState = {
-    trackQueue: [],
+    
     albumTracks:{}
 }
 
