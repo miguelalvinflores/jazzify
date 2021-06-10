@@ -102,7 +102,7 @@ button.album-play-btn {
     min-width: var(--size);
     transition: transform 33ms cubic-bezier(.3,0,0,1),-webkit-transform 33ms cubic-bezier(.3,0,0,1);
     width: var(--size);
-    background-color: #1db954;
+    background-color: #382b7f;
     color: #fff;
 }
 
@@ -127,7 +127,7 @@ button.album-play-btn {
     cursor: pointer;
     left: -2.5px;
     top: 2.5px;
-    background-color: #25ca5f;
+    background-color: #4b3aa8;
 }
 
 .album-text-container {

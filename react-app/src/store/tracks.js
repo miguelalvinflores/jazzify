@@ -1,5 +1,7 @@
 const GET_TRACKS_BY_ALBUM = 'track/GET_TRACKS_BY_ALBUM';
-const PUT_ALBUM_IN_QUEUE = 'track/PUT_ALBUM_IN_QUEUE'
+const PUT_ALBUM_IN_QUEUE = 'track/PUT_ALBUM_IN_QUEUE';
+const SET_TRACK_INDEX = 'track/SET_TRACK_INDEX';
+
 const getTracksByAlbum = (tracksByAlbum) => {
     return {
         type: GET_TRACKS_BY_ALBUM,
@@ -11,6 +13,13 @@ const albumToQueue = (albumTracks) => {
     return {
         type: PUT_ALBUM_IN_QUEUE,
         payload: albumTracks
+    }
+}
+
+export const setTrackIndex = (trackIndex) => {
+    return {
+        type: SET_TRACK_INDEX,
+        payload: trackIndex,
     }
 }
 
@@ -27,12 +36,17 @@ export const playAlbum = (albumTracks) => async (dispatch) => {
 }
 
 const initialState = {
-    
+    trackIndex: 0,
     albumTracks:{}
 }
 
 export default function reducer(state = initialState, action) {
     switch(action.type) {
+        case SET_TRACK_INDEX:
+            return {
+                ...state,
+                trackIndex: action.payload
+            }
         case GET_TRACKS_BY_ALBUM:
             return {
                 ...state,

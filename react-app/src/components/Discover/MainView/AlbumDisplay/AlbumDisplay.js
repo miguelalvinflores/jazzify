@@ -8,10 +8,11 @@ import './AlbumDisplay.css'
 function AlbumDisplay({album}) {
     // console.log('ALBUM', album)
     const dispatch = useDispatch();
-    // const currentAlbum = useSelector((state) => state.albums.album)
+    const currentAlbum = useSelector((state) => state.albums.album)
+
     const artists = useSelector((state) => state.artists.allArtists)
     // const albumTracksList = useSelector((state) => state.tracks.albumTracks)
-    const albumTracks = useSelector((state) => state.tracks.albumTracks[album.album_title])
+    const albumTracks = useSelector((state) => state.tracks.albumTracks[currentAlbum.album_title])
     const playAlbum = () => {
         // console.log('PLAY ALBUM', album)
         dispatch(albumActions.thisAlbum(album))
