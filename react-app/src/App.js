@@ -32,8 +32,8 @@ function App() {
     loggedIn = true;
   }
   return (
-
     <BrowserRouter>
+
       <Switch>
         <Route path="/" exact={true} >
           { loggedIn ? <Redirect to='/discover' /> : <Splash /> }
@@ -54,10 +54,10 @@ function App() {
           <User />
         </ProtectedRoute> */}
       </Switch>
-      {tracksQueue && (
-                        <PlayingBar
-                        tracksQueue={tracksQueue} />
-                    )}
+      {(tracksQueue && loggedIn) && (
+        <PlayingBar
+        tracksQueue={tracksQueue} />
+      )}
     </BrowserRouter>
   );
 }

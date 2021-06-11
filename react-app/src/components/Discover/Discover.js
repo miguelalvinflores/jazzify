@@ -1,6 +1,6 @@
 import React from 'react';
 import DiscoverNav from './DiscoverNav/DiscoverNav';
-// import PlayingBar from './PlayingBar/PlayingBar';
+import DiscoverBar from './DiscoverBar/DiscoverBar';
 import MainView from './MainView/MainView';
 import './Discover.css'
 // import { useSelector } from 'react-redux';
@@ -19,6 +19,7 @@ const Discover = () => {
                         <PlayingBar
                         tracksQueue={tracksQueue} />
                     )} */}
+                    <DiscoverBar/>
                     <MainView />
                 </div>
             </div>

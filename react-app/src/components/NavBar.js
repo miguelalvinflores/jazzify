@@ -52,6 +52,23 @@ const NavBar = () => {
           <img src={logoText} alt='Jazzify logo' />
         </a>
       </header>
+      <div className='bio-links'>
+        <div className="github-bio">
+          <a href="https://github.com/miguelalvinflores">
+            <i className="fab fa-github fa-3x"></i>
+          </a>
+        </div>
+        <div className="linkedIn-bio">
+          <a href="https://www.linkedin.com/in/miguelalvinflores/">
+            <i className="fab fa-linkedin-in fa-3x"></i>
+          </a>
+        </div>
+        <div className="AngelList-bio">
+          <a href="https://angel.co/u/miguel-flores-22">
+            <i className="fab fa-angellist fa-3x"></i>
+          </a>
+        </div>
+      </div>
       <nav>
         {sessionLinks}
       </nav>

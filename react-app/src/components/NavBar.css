@@ -10,6 +10,14 @@ header{
     margin: 1px 20px;
     padding: 0 15px;
 }
+
+.bio-links {
+    padding-top: 13px;
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+
 ul.nav-list {
     display: inline-flex;
 }
