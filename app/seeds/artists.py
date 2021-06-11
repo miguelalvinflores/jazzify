@@ -18,22 +18,45 @@ def seed_artists():
     )
 
     artist4 = Artist(
-        artist_name="Billie Holiday and her Orchestra",
+        artist_name="Billie Holiday and Her Orchestra",
         image_url='https://images-na.ssl-images-amazon.com/images/I/513REbiChRL._AC_.jpg'
     )
 
-    # artist1 = Album(
-    #     artist_name="Louis Armstrong and his Hot Five",
-    #     image_url='',
-    # )
+    artist5 = Artist(
+        artist_name="Teddy Wilson and His Orchestra",
+        image_url='https://www.hepjazz.com/images/artists/teddy_wilson_2.jpg',
+    )
+
+    artist6 = Artist(
+        artist_name="The King Cole Trio",
+        image_url='https://syncopatedtimes.com/wp-content/uploads/2019/11/King-Cole-Trio.jpg',
+    )
+
+    artist7 = Artist(
+        artist_name="Enric Madriguera and Orchestra",
+        image_url='https://i.ytimg.com/vi/L9lhMa2aokA/mqdefault.jpg',
+    )
+
+    artist8 = Artist(
+        artist_name='"Fats" Waller and His Buddies',
+        image_url='https://www.vocalgroupharmony.com/3ROWNEW/FatsWallerDeeps.jpg',
+    )
+
+
+
 
     db.session.add(artist1)
     db.session.add(artist2)
     db.session.add(artist3)
     db.session.add(artist4)
+    db.session.add(artist5)
+    db.session.add(artist6)
+    db.session.add(artist7)
+    db.session.add(artist8)
+
     db.session.commit()
-    # artist1 = Album(
-    #     artist_name="",
+    # artist1 = Artist(
+    #     artist_name="Louis Armstrong and his Hot Five",
     #     image_url='',
     # )
 def undo_artists():
