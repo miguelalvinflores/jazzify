@@ -372,13 +372,13 @@ def seed_tracks():
 
     db.session.commit()
 
-    track1 = Track(
-        song_title="",
-        image_url='https://ia800604.us.archive.org/21/items/78_boogie-woogie-music-vol.-2_meade-lux-lewis-shayne_gbia0003369/78_boogie-woogie-music-vol.-2_meade-lux-lewis-shayne_gbia0003369_itemimage.jpg',
-        source_url='',
-        album_id='7',
-        artist_id='num',
-    )
+    # track1 = Track(
+    #     song_title="",
+    #     image_url='https://ia800604.us.archive.org/21/items/78_boogie-woogie-music-vol.-2_meade-lux-lewis-shayne_gbia0003369/78_boogie-woogie-music-vol.-2_meade-lux-lewis-shayne_gbia0003369_itemimage.jpg',
+    #     source_url='',
+    #     album_id='7',
+    #     artist_id='num',
+    # )
 
     # track3 = Track(
     #     song_title="",

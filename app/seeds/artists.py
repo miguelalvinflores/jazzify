@@ -22,10 +22,10 @@ def seed_artists():
         image_url='https://images-na.ssl-images-amazon.com/images/I/513REbiChRL._AC_.jpg'
     )
 
-    artist1 = Album(
-        artist_name="Louis Armstrong and his Hot Five",
-        image_url='',
-    )
+    # artist1 = Album(
+    #     artist_name="Louis Armstrong and his Hot Five",
+    #     image_url='',
+    # )
 
     db.session.add(artist1)
     db.session.add(artist2)

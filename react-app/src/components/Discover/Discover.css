@@ -26,5 +26,6 @@
 }
 
 .disc-left-nav {
-    width: 200px;
+    width: 100%;
+    margin-right: 200px
 }
