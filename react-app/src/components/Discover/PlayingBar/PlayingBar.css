@@ -8,7 +8,9 @@
     width: 100%;
     z-index: 4;
     height: 94px;
-    overflow: hidden
+    overflow: hidden;
+    position: absolute;
+    bottom: 0px;
 }
 .play-footer {
     border: 0;
@@ -478,7 +480,8 @@ input[type=range]::-webkit-slider-thumb {
     -webkit-box-flex: 0;
     align-items: center;
     display: flex;
-    flex: 0 1 125px;
+    flex: 0 1 215px;
+    margin-right: 15%;
 }
 
 .extra-controls__mute-btn {
@@ -498,6 +501,10 @@ input[type=range]::-webkit-slider-thumb {
 
 .mute-svg {
     fill: currentcolor;
+}
+
+.mute-svg:hover {
+    cursor: pointer;
 }
 
 .vol-range {

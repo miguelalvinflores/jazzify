@@ -9,12 +9,13 @@ import User from "./components/User";
 import Splash from './components/Splash/Splash'
 import Discover from './components/Discover/Discover';
 import { authenticate } from "./store/session";
+import PlayingBar from './components/Discover/PlayingBar/PlayingBar';
 
 function App() {
   const user = useSelector(state => state.session.user)
   const [loaded, setLoaded] = useState(false);
   const dispatch = useDispatch();
-
+  const tracksQueue = useSelector((state) => state.tracks.trackQueue)
   useEffect(() => {
     (async() => {
       await dispatch(authenticate());
@@ -46,13 +47,17 @@ function App() {
         <ProtectedRoute path='/discover' >
           <Discover />
         </ProtectedRoute>
-        <ProtectedRoute path="/users" exact={true} >
+        {/* <ProtectedRoute path="/users" exact={true} >
           <UsersList/>
         </ProtectedRoute>
         <ProtectedRoute path="/users/:userId" exact={true} >
           <User />
-        </ProtectedRoute>
+        </ProtectedRoute> */}
       </Switch>
+      {tracksQueue && (
+                        <PlayingBar
+                        tracksQueue={tracksQueue} />
+                    )}
     </BrowserRouter>
   );
 }

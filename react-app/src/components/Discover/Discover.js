@@ -1,12 +1,12 @@
 import React from 'react';
 import DiscoverNav from './DiscoverNav/DiscoverNav';
-import PlayingBar from './PlayingBar/PlayingBar';
+// import PlayingBar from './PlayingBar/PlayingBar';
 import MainView from './MainView/MainView';
 import './Discover.css'
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 const Discover = () => {
 
-    const tracksQueue = useSelector((state) => state.tracks.trackQueue)
+    // const tracksQueue = useSelector((state) => state.tracks.trackQueue)
 
     return (
         <div id='main' >
@@ -15,10 +15,10 @@ const Discover = () => {
                     <div className='disc-left-nav'>
                         <DiscoverNav />
                     </div>
-                    {tracksQueue && (
+                    {/* {tracksQueue && (
                         <PlayingBar
                         tracksQueue={tracksQueue} />
-                    )}
+                    )} */}
                     <MainView />
                 </div>
             </div>
