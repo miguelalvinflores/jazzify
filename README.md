@@ -62,6 +62,12 @@ DIY Product Hunt is built using the following stack & libraries:
 
 Leave a star in GitHub and share this guide if you found this helpful.
 
+
+
+
+
+
+
 <!-- Add the footer (.png) here -->
 
 
@@ -164,4 +170,8 @@ Leave a star in GitHub and share this guide if you found this helpful.
 
 10. Under Settings find "Config Vars" and add any additional/secret .env variables.
 
-11. profit
+
+[(Back to top)](#table-of-contents)
+
+Leave a star in GitHub and share this guide if you found this helpful.
+
