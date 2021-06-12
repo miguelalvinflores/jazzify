@@ -1,6 +1,68 @@
-# Flask React Project
+# DIY Product Hunt
 
-This is the backend for the Flask React project.
+## Brief Introduction
+
+Jazzify is a website for jazzheads to listen to a limited library of all time greats.
+
+All music is sourced from publicly available libraries and collections under:
+<a href="https://archive.org/" target="_top">Internet Archive Website</a>
+
+# Table of contents
+
+
+- [Jazzify](#Jazzify)
+- [Brief Description](#brief-introduction)
+- [Table of contents](#table-of-contents)
+- [Live Link](#live-link)
+- [Technologies](#technologies)
+    - [Backend](#backend)
+    - [Frontend](#frontend)
+- [Footer](#footer)
+
+# Jazzify
+![GitHub last commit](https://img.shields.io/github/last-commit/miguelalvinflores/jazzify)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/miguelalvinflores/jazzify)
+
+
+
+## [Live Link](**https://jazzify-aa.herokuapp.com/**)
+
+<a href="https://jazzify-aa.herokuapp.com/" target="_top">Jazzify Website</a>
+
+<!-- Insert Usage GIF here -->
+
+## Technologies
+
+DIY Product Hunt is built using the following stack & libraries:
+
+### **Backend**
+1. _Sequelize_
+   * Sequelize is a promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server. It features solid transaction support, relations, eager and lazy loading, read replication and more.
+2. _PostgreSQL_
+   * PostgreSQL is a relational database management system emphasizing extensibility and SQL compliance.
+3. _Python_
+   * web applications can send and retrieve data from a server asynchronously without interfering with the display and behaviour of the existing page.
+
+### **Frontend**
+
+1. _Javascript_
+2. _React.js_
+   * React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
+
+### **Hosting**
+1. Heroku
+   * Heroku is a platform as a service that enables developers to build, run, and operate applications entirely in the cloud.
+
+## Features
+
+
+# Footer
+[(Back to top)](#table-of-contents)
+
+Leave a star in GitHub and share this guide if you found this helpful.
+
+<!-- Add the footer (.png) here -->
+
 
 ## Getting started
 
@@ -40,6 +102,10 @@ This is the backend for the Flask React project.
 
 6. To run the React App in development, checkout the [README](./react-app/README.md) inside the `react-app` directory.
 
+
+
+## Deploy to Heroku
+
 ***
 *IMPORTANT!*
    If you add any python dependencies to your pipfiles, you'll need to regenerate your requirements.txt before deployment.
@@ -53,8 +119,6 @@ This is the backend for the Flask React project.
    psycopg2-binary MUST remain a dev dependency because you can't install it on apline-linux.
    There is a layer in the Dockerfile that will install psycopg2 (not binary) for us.
 ***
-
-## Deploy to Heroku
 
 1. Create a new project on Heroku
 2. Under Resources click "Find more add-ons" and add the add on called "Heroku Postgres"
