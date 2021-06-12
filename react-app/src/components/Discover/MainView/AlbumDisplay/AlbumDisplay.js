@@ -49,7 +49,7 @@ function AlbumDisplay({album}) {
                         </div>
                     </Link>
                     <div className='album-text-artist'>
-                        <span>{artists[album.id]?.artist_name}</span>
+                        <span>{artists[album.artist_id]?.artist_name}</span>
                     </div>
                 </div>
             </div>

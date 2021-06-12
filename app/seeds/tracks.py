@@ -1267,48 +1267,144 @@ def seed_tracks():
     db.session.commit()
 
     track1 = Track(
-        song_title="",
+        song_title="Chelsea",
         image_url='https://ia903109.us.archive.org/31/items/78_whitechapel_ted-heath-his-music-fats-waller_gbia0072014/78_whitechapel_ted-heath-his-music-fats-waller_gbia0072014_itemimage.jpg',
-        source_url='',
+        source_url='https://ia803109.us.archive.org/31/items/78_whitechapel_ted-heath-his-music-fats-waller_gbia0072014/01%20-%20Chelsea%20-%20Ted%20Heath%20%26%20His%20Music%20-%20%22Fats%22%20Waller.mp3',
         album_id='21',
         artist_id='8',
     )
     track2 = Track(
-        song_title="",
+        song_title="Whitechapel",
         image_url='https://ia903109.us.archive.org/31/items/78_whitechapel_ted-heath-his-music-fats-waller_gbia0072014/78_whitechapel_ted-heath-his-music-fats-waller_gbia0072014_itemimage.jpg',
-        source_url='',
+        source_url='https://ia903109.us.archive.org/31/items/78_whitechapel_ted-heath-his-music-fats-waller_gbia0072014/02%20-%20Whitechapel%20-%20Ted%20Heath%20%26%20His%20Music%20-%20%22Fats%22%20Waller.mp3',
         album_id='21',
         artist_id='8',
     )
     track3 = Track(
-        song_title="",
+        song_title="Limehouse",
         image_url='https://ia903109.us.archive.org/31/items/78_whitechapel_ted-heath-his-music-fats-waller_gbia0072014/78_whitechapel_ted-heath-his-music-fats-waller_gbia0072014_itemimage.jpg',
-        source_url='',
+        source_url='https://ia803109.us.archive.org/31/items/78_whitechapel_ted-heath-his-music-fats-waller_gbia0072014/03%20-%20Limehouse%20-%20Ted%20Heath%20%26%20His%20Music%20-%20%22Fats%22%20Waller.mp3',
         album_id='21',
         artist_id='8',
     )
     track4 = Track(
-        song_title="",
+        song_title="Bond Street",
         image_url='https://ia903109.us.archive.org/31/items/78_whitechapel_ted-heath-his-music-fats-waller_gbia0072014/78_whitechapel_ted-heath-his-music-fats-waller_gbia0072014_itemimage.jpg',
-        source_url='',
+        source_url='https://ia803109.us.archive.org/31/items/78_whitechapel_ted-heath-his-music-fats-waller_gbia0072014/04%20-%20Bond%20Street%20-%20Ted%20Heath%20%26%20His%20Music%20-%20%22Fats%22%20Waller.mp3',
         album_id='21',
         artist_id='8',
     )
     track5 = Track(
-        song_title="",
+        song_title="Piccadilly",
         image_url='https://ia903109.us.archive.org/31/items/78_whitechapel_ted-heath-his-music-fats-waller_gbia0072014/78_whitechapel_ted-heath-his-music-fats-waller_gbia0072014_itemimage.jpg',
-        source_url='',
+        source_url='https://ia803109.us.archive.org/31/items/78_whitechapel_ted-heath-his-music-fats-waller_gbia0072014/05%20-%20Piccadilly%20-%20Ted%20Heath%20%26%20His%20Music%20-%20%22Fats%22%20Waller.mp3',
         album_id='21',
         artist_id='8',
     )
     track6 = Track(
-        song_title="",
+        song_title="Soho",
         image_url='https://ia903109.us.archive.org/31/items/78_whitechapel_ted-heath-his-music-fats-waller_gbia0072014/78_whitechapel_ted-heath-his-music-fats-waller_gbia0072014_itemimage.jpg',
-        source_url='',
+        source_url='https://ia803109.us.archive.org/31/items/78_whitechapel_ted-heath-his-music-fats-waller_gbia0072014/06%20-%20Soho%20-%20Ted%20Heath%20%26%20His%20Music%20-%20%22Fats%22%20Waller.mp3',
         album_id='21',
         artist_id='8',
     )
 
+    db.session.add(track1)
+    db.session.add(track2)
+    db.session.add(track3)
+    db.session.add(track4)
+    db.session.add(track5)
+    db.session.add(track6)
+
+    db.session.commit()
+
+    track1 = Track(
+        song_title="Chicago Breakdown",
+        image_url='https://ia800103.us.archive.org/6/items/78_dont-jive-me_louis-armstrong-and-his-hot-seven-earl-hines-louis-armstrong-boyd-atk_gbia0022489/78_dont-jive-me_louis-armstrong-and-his-hot-seven-earl-hines-louis-armstrong-boyd-atk_gbia0022489_itemimage.jpg',
+        source_url='https://ia800103.us.archive.org/6/items/78_dont-jive-me_louis-armstrong-and-his-hot-seven-earl-hines-louis-armstrong-boyd-atk_gbia0022489/03%20-%20Chicago%20Breakdown%20-%20Louis%20Armstrong%20and%20his%20Hot%20Seven.mp3',
+        album_id='22',
+        artist_id='1',
+    )
+    track2 = Track(
+        song_title="Don't Jive Me",
+        image_url='https://ia800103.us.archive.org/6/items/78_dont-jive-me_louis-armstrong-and-his-hot-seven-earl-hines-louis-armstrong-boyd-atk_gbia0022489/78_dont-jive-me_louis-armstrong-and-his-hot-seven-earl-hines-louis-armstrong-boyd-atk_gbia0022489_itemimage.jpg',
+        source_url='https://ia600103.us.archive.org/6/items/78_dont-jive-me_louis-armstrong-and-his-hot-seven-earl-hines-louis-armstrong-boyd-atk_gbia0022489/04%20-%20Don%27t%20Jive%20Me%20-%20Louis%20Armstrong%20and%20his%20Hot%20Five.mp3',
+        album_id='22',
+        artist_id='1',
+    )
+    track3 = Track(
+        song_title="Tight Like This",
+        image_url='https://ia800103.us.archive.org/6/items/78_dont-jive-me_louis-armstrong-and-his-hot-seven-earl-hines-louis-armstrong-boyd-atk_gbia0022489/78_dont-jive-me_louis-armstrong-and-his-hot-seven-earl-hines-louis-armstrong-boyd-atk_gbia0022489_itemimage.jpg',
+        source_url='https://ia800103.us.archive.org/6/items/78_dont-jive-me_louis-armstrong-and-his-hot-seven-earl-hines-louis-armstrong-boyd-atk_gbia0022489/07%20-%20Tight%20Like%20This%20-%20Louis%20Armstrong%20and%20his%20Orchestra.mp3',
+        album_id='22',
+        artist_id='1',
+    )
+    track4 = Track(
+        song_title="Heah Me Talkin' To Ya?",
+        image_url='https://ia800103.us.archive.org/6/items/78_dont-jive-me_louis-armstrong-and-his-hot-seven-earl-hines-louis-armstrong-boyd-atk_gbia0022489/78_dont-jive-me_louis-armstrong-and-his-hot-seven-earl-hines-louis-armstrong-boyd-atk_gbia0022489_itemimage.jpg',
+        source_url='https://ia800103.us.archive.org/6/items/78_dont-jive-me_louis-armstrong-and-his-hot-seven-earl-hines-louis-armstrong-boyd-atk_gbia0022489/08%20-%20Heah%20Me%20Talkin%27%20To%20Ya%3F%20-%20Louis%20Armstrong%20and%20his%20Orchestra.mp3',
+        album_id='22',
+        artist_id='1',
+    )
+
+    db.session.add(track1)
+    db.session.add(track2)
+    db.session.add(track3)
+    db.session.add(track4)
+
+    db.session.commit()
+
+    track1 = Track(
+        song_title="Birmingham Breakdown",
+        image_url='https://ia800605.us.archive.org/29/items/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356_itemimage.jpg',
+        source_url='https://ia800605.us.archive.org/29/items/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356/Birmingham%20Breakdown%20-%20Duke%20Ellington%20and%20His%20Orchestra-restored.mp3',
+        album_id='23',
+        artist_id='2',
+    )
+    track2 = Track(
+        song_title="Black and Tan Fantasy",
+        image_url='https://ia800605.us.archive.org/29/items/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356_itemimage.jpg',
+        source_url='https://ia800605.us.archive.org/29/items/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356/Black%20And%20Tan%20Fantasy%20-%20Duke%20Ellington%20and%20His%20Orchestra-restored.mp3',
+        album_id='23',
+        artist_id='2',
+    )
+    track3 = Track(
+        song_title="East St. Louis Toodle-oo",
+        image_url='https://ia800605.us.archive.org/29/items/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356_itemimage.jpg',
+        source_url='https://ia800605.us.archive.org/29/items/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356/East%20St.%20Louis%20Toodle-oo%20-%20Duke%20Ellington%20and%20His%20Orchestra-restored.mp3',
+        album_id='23',
+        artist_id='2',
+    )
+    track4 = Track(
+        song_title="Mood Indigo",
+        image_url='https://ia800605.us.archive.org/29/items/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356_itemimage.jpg',
+        source_url='https://ia600605.us.archive.org/29/items/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356/Mood%20Indigo%20-%20Duke%20Ellington%20and%20His%20Orchestra-restored.mp3',
+        album_id='23',
+        artist_id='2',
+    )
+    track5 = Track(
+        song_title="The Mooche",
+        image_url='https://ia800605.us.archive.org/29/items/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356_itemimage.jpg',
+        source_url='https://ia600605.us.archive.org/29/items/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356/The%20Mooche%20-%20Duke%20Ellington%20and%20His%20Orchestra-restored.mp3',
+        album_id='23',
+        artist_id='2',
+    )
+    track6 = Track(
+        song_title="Wall Street Wail",
+        image_url='https://ia800605.us.archive.org/29/items/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356_itemimage.jpg',
+        source_url='https://ia800605.us.archive.org/29/items/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356/Wall%20Street%20Wail%20-%20Duke%20Ellington%20and%20His%20Orchestra-restored.mp3',
+        album_id='23',
+        artist_id='2',
+    )
+
+    db.session.add(track1)
+    db.session.add(track2)
+    db.session.add(track3)
+    db.session.add(track4)
+    db.session.add(track5)
+    db.session.add(track6)
+
+    db.session.commit()
 
     # track3 = Track(
     #     song_title="",

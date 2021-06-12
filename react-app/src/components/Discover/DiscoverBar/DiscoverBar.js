@@ -24,13 +24,13 @@ const DiscoverBar = () => {
 
     if (profileShowing) {
         arrowSvg = (
-            <svg role="img" height="16" width="16" class="profile-arrow-svg" viewBox="0 0 16 16">
+            <svg role="img" height="16" width="16" className="profile-arrow-svg" viewBox="0 0 16 16">
                 <path d="M13 10L8 4.206 3 10z"></path>
             </svg>
         )
     } else {
         arrowSvg =(
-            <svg role="img" height="16" width="16" class="profile-arrow-svg" viewBox="0 0 16 16">
+            <svg role="img" height="16" width="16" className="profile-arrow-svg" viewBox="0 0 16 16">
                 <path d="M3 6l5 5.794L13 6z"></path>
             </svg>
         )
@@ -43,10 +43,12 @@ const DiscoverBar = () => {
                 <div className='bar__header-background-container'>
                     <div className='bar__header-background'></div>
                 </div>
+
                 {/* <div className='arrow-btn-container'>
                     <button id='top-bar-back-btn'></button>
                     <button id='top-bar-forward-btn'></button>
                 </div> */}
+
                 <button
                     className='profile-container-btn'
                     onClick={profileBtnClick}

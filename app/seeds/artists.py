@@ -42,7 +42,10 @@ def seed_artists():
         image_url='https://www.vocalgroupharmony.com/3ROWNEW/FatsWallerDeeps.jpg',
     )
 
-
+    # artist9 = Artist(
+    #     artist_name="Bessie Smith",
+    #     image_url='https://www.liveabout.com/thmb/8I3V8RuA7MlpkYdPpCkRaq6vFHE=/1785x1339/smart/filters:no_upscale()/Bessie_Smith_on_stage-5b224d293037130036633665.jpg',
+    # )
 
 
     db.session.add(artist1)
@@ -53,11 +56,12 @@ def seed_artists():
     db.session.add(artist6)
     db.session.add(artist7)
     db.session.add(artist8)
+    # db.session.add(artist9)
 
     db.session.commit()
     # artist1 = Artist(
-    #     artist_name="Louis Armstrong and his Hot Five",
-    #     image_url='',
+    #     artist_name="Bessie Smith",
+    #     image_url='https://www.liveabout.com/thmb/8I3V8RuA7MlpkYdPpCkRaq6vFHE=/1785x1339/smart/filters:no_upscale()/Bessie_Smith_on_stage-5b224d293037130036633665.jpg',
     # )
 def undo_artists():
     db.session.execute('TRUNCATE artists RESTART IDENTITY CASCADE;')

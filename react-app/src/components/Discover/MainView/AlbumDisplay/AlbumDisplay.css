@@ -161,6 +161,10 @@ button.album-play-btn {
     white-space: nowrap;
 }
 
+.album-text-title:hover {
+    text-decoration: underline;
+}
+
 .album-text-artist {
     border: 0;
     margin: 0;

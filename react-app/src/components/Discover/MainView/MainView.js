@@ -44,12 +44,75 @@ const MainView = () => {
                                                         </div>
                                                     </div>
                                                     <div className='sec-content' style={ {  } }>
-                                                        {Object.entries(albums).map((album) => {
-                                                            return (
+                                                        {Object.entries(albums).map((album, index) => {
+                                                            return ((((index > 1) && (index < 4)) || (index === 6) || ((index > 13) && (index < 16))) && (
                                                                 <div key={album[0]} >
                                                                     <AlbumDisplay album={album[1]} />
                                                                 </div>
-                                                            )
+                                                            ))
+                                                        })}
+                                                    </div>
+                                                </section>
+                                                <section>
+                                                    <div className='sec-header'>
+                                                        <div className='sec-header-container'>
+                                                            <div className='sec-header__title-container'>
+                                                                <h2 className='sec-header__title'>
+                                                                    For Fans of L. Armstrong
+                                                                </h2>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div className='sec-content' style={ {  } }>
+                                                        {Object.entries(albums).map((album, index) => {
+                                                            return ((album[1].artist_id === 1) && (
+                                                                <div key={album[0]} >
+                                                                    <AlbumDisplay album={album[1]} />
+                                                                </div>
+                                                            ))
+                                                        })}
+                                                    </div>
+                                                </section>
+                                                <section>
+                                                    <div className='sec-header'>
+                                                        <div className='sec-header-container'>
+                                                            <div className='sec-header__title-container'>
+                                                                <h2 className='sec-header__title'>
+                                                                    For Fans of the Duke
+                                                                </h2>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div className='sec-content' style={ {  } }>
+                                                        {Object.entries(albums).map((album, index) => {
+                                                            return ((album[1].artist_id === 2) && (
+                                                                <div key={album[0]} >
+                                                                    <AlbumDisplay album={album[1]} />
+                                                                </div>
+                                                            ))
+                                                        })}
+                                                    </div>
+                                                </section>
+                                                <section>
+                                                    <div className='sec-header'>
+                                                        <div className='sec-header-container'>
+                                                            <div className='sec-header__title-container'>
+                                                                <h2 className='sec-header__title'>
+                                                                    Other great Classics
+                                                                </h2>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div className='sec-content' style={ {  } }>
+                                                        {Object.entries(albums).map((album, index) => {
+                                                            return ((((index > 15) && (album[1].artist_id !== 2)) && ((album[1].id !== 20) && ((album[1].artist_id !== 1)) || ( album[1].id === 22))) && (
+                                                                <div key={album[0]} >
+                                                                    <AlbumDisplay album={album[1]} />
+                                                                </div>
+                                                            ))
                                                         })}
                                                     </div>
                                                 </section>

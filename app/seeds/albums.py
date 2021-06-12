@@ -22,7 +22,7 @@ def seed_albums():
     album4 = Album(
         album_title="Billie Holiday Vol. 1",
         image_url='https://ia800108.us.archive.org/14/items/78_when-a-woman-loves-a-man_billie-holiday-and-her-orchestra-billie-holiday-buck-clayt_gbia0031202/78_when-a-woman-loves-a-man_billie-holiday-and-her-orchestra-billie-holiday-buck-clayt_gbia0031202_itemimage.jpg',
-        artist_id='3',
+        artist_id='4',
     )
 
     album5 = Album(
@@ -125,6 +125,18 @@ def seed_albums():
         artist_id='8',
     )
 
+    album22 = Album(
+        album_title="Louis and Earl",
+        image_url='https://ia800103.us.archive.org/6/items/78_dont-jive-me_louis-armstrong-and-his-hot-seven-earl-hines-louis-armstrong-boyd-atk_gbia0022489/78_dont-jive-me_louis-armstrong-and-his-hot-seven-earl-hines-louis-armstrong-boyd-atk_gbia0022489_itemimage.jpg',
+        artist_id='1',
+    )
+
+    album23 = Album(
+        album_title="Ellingtonia Volume One",
+        image_url='https://ia800605.us.archive.org/29/items/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356/78_ellingtonia-volume-one-a-collection-of-distinctive-recordings-played-by-duke-ellin_gbia0003356_itemimage.jpg',
+        artist_id='2',
+    )
+
     db.session.add(album1)
     db.session.add(album2)
     db.session.add(album3)
@@ -146,6 +158,8 @@ def seed_albums():
     db.session.add(album19)
     db.session.add(album20)
     db.session.add(album21)
+    db.session.add(album22)
+    db.session.add(album23)
 
     db.session.commit()
 
