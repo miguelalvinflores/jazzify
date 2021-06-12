@@ -4,7 +4,8 @@
 
 Jazzify is a website for jazzheads to listen to a limited library of all time greats.
 
-All music is sourced from publicly available libraries and collections under:
+All music is sourced from publicly available libraries and collections under: 
+
 <a href="https://archive.org/" target="_top">Internet Archive Website</a>
 
 # Table of contents
