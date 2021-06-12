@@ -243,7 +243,7 @@ p.type-element {
 }
 
 .signup-btn:hover{
-    opacity: 85%;
+    background-color:#283EA4
 }
 
 .btn-focus {
@@ -543,9 +543,7 @@ p.type-element {
     }
 }
 
-.login-card:hover {
-    opacity: 85%;
-}
+
 
 .login-btn {
     background-color: var(--background-base,#1ed760);
@@ -582,4 +580,8 @@ p.type-element {
     --decorative-base: #2941AB !important;
     --decorative-subdued: #2941AB !important;
     text-decoration: none !important;
+}
+
+.login-btn:hover {
+    background-color:#2DE26D ;
 }
