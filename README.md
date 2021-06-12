@@ -54,10 +54,10 @@ DIY Product Hunt is built using the following stack & libraries:
 1. Heroku
    * Heroku is a platform as a service that enables developers to build, run, and operate applications entirely in the cloud.
 
-## Features
+<!-- ## Features -->
 
 
-# Footer
+<!-- # Footer -->
 [(Back to top)](#table-of-contents)
 
 Leave a star in GitHub and share this guide if you found this helpful.
@@ -65,7 +65,7 @@ Leave a star in GitHub and share this guide if you found this helpful.
 <!-- Add the footer (.png) here -->
 
 
-## Getting started
+## Getting started (if forking or cloning)
 
 1. Clone this repository (only this branch)
 
