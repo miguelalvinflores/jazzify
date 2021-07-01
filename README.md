@@ -1,4 +1,4 @@
-# DIY Product Hunt
+# Jazzify
 
 ## Brief Introduction
 
