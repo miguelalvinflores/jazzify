@@ -3,7 +3,7 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/miguelalvinflores/jazzify)
 
 <!-- Insert Usage GIF here -->
-![Site Demo Gif](JazzifyGIF2Mb.gif)
+![Site Demo Gif](JazzifyGIF3Mb.gif)
 
 ## Brief Introduction
 
