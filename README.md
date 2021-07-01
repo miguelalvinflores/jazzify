@@ -1,8 +1,13 @@
 # Jazzify
+![GitHub last commit](https://img.shields.io/github/last-commit/miguelalvinflores/jazzify)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/miguelalvinflores/jazzify)
+
+<!-- Insert Usage GIF here -->
+![Site Demo Gif](JazzifyGIF2Mb.gif)
 
 ## Brief Introduction
 
-Jazzify is a website for jazzheads to listen to a limited library of all time greats.
+Jazzify is a website for jazzheads to listen to a privately selected library of all time jazz greats.
 
 All music is sourced from publicly available libraries and collections under: 
 
@@ -18,12 +23,8 @@ All music is sourced from publicly available libraries and collections under:
 - [Technologies](#technologies)
     - [Backend](#backend)
     - [Frontend](#frontend)
-- [Footer](#footer)
-
-# Jazzify
-![GitHub last commit](https://img.shields.io/github/last-commit/miguelalvinflores/jazzify)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/miguelalvinflores/jazzify)
-
+    - [Hosting](#hosting)
+- [Features](#features)
 
 
 ## [Live Link](**https://jazzify-aa.herokuapp.com/**)
@@ -34,7 +35,7 @@ All music is sourced from publicly available libraries and collections under:
 
 ## Technologies
 
-DIY Product Hunt is built using the following stack & libraries:
+Jazzify is built using the following stack & libraries:
 
 ### **Backend**
 1. _Sequelize_
@@ -43,6 +44,8 @@ DIY Product Hunt is built using the following stack & libraries:
    * PostgreSQL is a relational database management system emphasizing extensibility and SQL compliance.
 3. _Python_
    * web applications can send and retrieve data from a server asynchronously without interfering with the display and behaviour of the existing page.
+4. Internet Archive API
+   * The Internet Archive is an American digital library with the stated mission of "universal access to all knowledge". It provides free public access to collections of digitized materials, including websites, software applications/games, music, movies/videos, moving images, and millions of books. This is the source of the media files.
 
 ### **Frontend**
 
@@ -54,7 +57,11 @@ DIY Product Hunt is built using the following stack & libraries:
 1. Heroku
    * Heroku is a platform as a service that enables developers to build, run, and operate applications entirely in the cloud.
 
-<!-- ## Features -->
+## Features
+
+Please take a look at our Wiki for a full list of features, and upcoming features
+
+<a href="https://github.com/miguelalvinflores/jazzify/wiki" target="_top">Jazzify Wiki</a>
 
 
 <!-- # Footer -->
