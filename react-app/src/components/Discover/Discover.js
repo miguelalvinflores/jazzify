@@ -15,10 +15,6 @@ const Discover = () => {
                     <div className='disc-left-nav'>
                         <DiscoverNav />
                     </div>
-                    {/* {tracksQueue && (
-                        <PlayingBar
-                        tracksQueue={tracksQueue} />
-                    )} */}
                     <DiscoverBar/>
                     <MainView />
                 </div>
