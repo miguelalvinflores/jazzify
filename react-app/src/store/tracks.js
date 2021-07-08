@@ -37,7 +37,7 @@ export const playAlbum = (albumTracks) => async (dispatch) => {
 
 const initialState = {
     trackIndex: 0,
-    albumTracks:{}
+    albumTracks:[]
 }
 
 export default function reducer(state = initialState, action) {

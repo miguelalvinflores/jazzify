@@ -71,7 +71,13 @@
 
 
 .isHome {
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(10, 10, 10);
+    color: #8e2de9;
+}
+
+.isHome > .nav-link,
+.isHome > .nav-link > .home-nav-text {
+    color: #8e2de9;
 }
 
 .nav-link {
@@ -95,7 +101,17 @@
     margin-top: 12px;
     color: #551A8B;
 }
-.nav-link:hover > .home-nav-text {
+
+.nav-home:hover {
+    border-style:  solid;
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: rgb(5, 5, 5);
+}
+
+.nav-link:hover > .home-nav-text,
+.nav-link:hover {
     color: #8e2de9;
 }
 
