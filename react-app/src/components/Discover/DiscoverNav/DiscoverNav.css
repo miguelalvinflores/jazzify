@@ -62,10 +62,16 @@
     padding: 0 8px;
     display: flex;
     height: 38px;
+    text-decoration: none;
     color: white;
-    background-color: rgb(17, 17, 17);
     position: relative;
     right: 25px
+}
+
+
+
+.isHome {
+    background-color: rgb(17, 17, 17);
 }
 
 .nav-link {
@@ -73,6 +79,12 @@
     text-decoration: none;
     width: 100%;
 }
+
+.home-icon {
+    position: relative;
+    top: 6px;
+}
+
 .home-icon-active {
     position: relative;
     top: 6px;
@@ -81,6 +93,10 @@
 .home-nav-text {
     margin-left: 5px;
     margin-top: 12px;
+    color: #551A8B;
+}
+.nav-link:hover > .home-nav-text {
+    color: #8e2de9;
 }
 
 .bio-links-main{

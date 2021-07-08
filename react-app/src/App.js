@@ -10,7 +10,7 @@ import Splash from './components/Splash/Splash'
 import Discover from './components/Discover/Discover';
 import { authenticate } from "./store/session";
 import PlayingBar from './components/Discover/PlayingBar/PlayingBar';
-
+import AlbumPage from "./components/AlbumPage/AlbumPage";
 function App() {
   const user = useSelector(state => state.session.user)
   const [loaded, setLoaded] = useState(false);
@@ -46,6 +46,9 @@ function App() {
         </Route>
         <ProtectedRoute path='/discover' >
           <Discover />
+        </ProtectedRoute>
+        <ProtectedRoute path='/albums/:albumId' exact={true}>
+          <AlbumPage />
         </ProtectedRoute>
         {/* <ProtectedRoute path="/users" exact={true} >
           <UsersList/>
