@@ -193,7 +193,7 @@ const PlayingBar = ({tracksQueue}) => {
                         <div className='playing-track-info-container'>
                             <div className='playing-track-info'>
                                 <div className='playing-track-img-container'>
-                                    <Link to={`/albums/${track?.album_id}`} className='playing-track-img-link' >
+                                    <Link to={`/albums/${track?.album_id}`} className='playing-track-img-link'>
                                         <div className='playing-album-img-container'>
                                             <div className='playing-album-cover-art'>
                                                 <img className='playing-album-img' src={track?.image_url} alt={`${album.album_title} Album Cover`} />

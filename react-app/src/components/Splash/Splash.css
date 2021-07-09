@@ -240,10 +240,12 @@ p.type-element {
     --decorative-subdued: #FFFFFF !important;
     text-decoration: none !important;
     text-align: center;
+    
 }
 
 .signup-btn:hover{
-    background-color:#283EA4
+    background-color:#283EA4;
+    cursor: pointer;
 }
 
 .btn-focus {

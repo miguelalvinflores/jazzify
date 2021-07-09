@@ -115,13 +115,21 @@
     isolation: isolate;
 }
 
-.content-spacing {
-    border: 0;
-    vertical-align: baseline;
+.contentSpacing {
     margin: 0;
-    max-width: 1955px;
     padding: 0 16px;
-    grid-gap: 24px;
-    display: grid;
-    padding-top: 85px;
+    color: #fff;
+    display: flex;
+    max-width: none;
+    overflow: hidden;
+    padding-bottom: 24px;
+    position: relative;
+    height: 30vh;
+    max-height: 500px;
+    min-height: 340px;
+}
+@media (min-width: 1024px) {
+    .contentSpacing {
+        padding: 0 32px;
+    }
 }
