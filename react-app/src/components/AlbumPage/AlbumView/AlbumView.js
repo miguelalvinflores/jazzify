@@ -1,5 +1,5 @@
 import React from 'react';
-// import { usePalette } from 'react-palette'
+import { usePalette } from 'react-palette'
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import './AlbumView.css'
@@ -7,8 +7,9 @@ import './AlbumView.css'
 const AlbumView = () => {
     const { albumId } = useParams();
     const album = useSelector((state) => state.albums.allAlbums[albumId]);
-    console.log(album,'ALBUM AT APAGE')
-    // const { data, loading, error } = usePalette(album.image_url)
+    // console.log(album,'ALBUM AT APAGE')
+    const { data, loading, error } = usePalette(album.image_url)
+    console.log(data.vibrant)
     return (
         <div className='Root__album-view'>
             <main className='album-view-container'>
@@ -20,7 +21,7 @@ const AlbumView = () => {
                                     <section className='album-page'>
                                         {/* <div className='ap-container'> */}
                                             <div className='contentSpacing'>
-                                                <div className='billboard-background'>
+                                                <div style={{ backgroundColor: data.vibrant }} className='billboard-background'>
 
                                                 </div>
                                             </div>
