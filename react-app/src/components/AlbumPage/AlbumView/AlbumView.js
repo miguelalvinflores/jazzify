@@ -1,15 +1,15 @@
 import React from 'react';
 import { usePalette } from 'react-palette'
 import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useParams, Link} from 'react-router-dom';
 import './AlbumView.css'
 
 const AlbumView = () => {
     const { albumId } = useParams();
     const album = useSelector((state) => state.albums.allAlbums[albumId]);
-    // console.log(album,'ALBUM AT APAGE')
+    const artist = useSelector((state) => state.artists.allArtists[album.artist_id])
     const { data, loading, error } = usePalette(album.image_url)
-    console.log(data.vibrant)
+
     return (
         <div className='Root__album-view'>
             <main className='album-view-container'>
@@ -21,8 +21,26 @@ const AlbumView = () => {
                                     <section className='album-page'>
                                         {/* <div className='ap-container'> */}
                                             <div className='contentSpacing'>
-                                                <div style={{ backgroundColor: data.vibrant }} className='billboard-background'>
+                                                <div style={{ backgroundColor: data.darkVibrant }} className='billboard-background' />
+                                                <div className='billboard-background-gradient' />
+                                                <div className='album-visuals-container'>
+                                                    <div className='album-cover-container'>
+                                                        <img className='album-cover' src={album.image_url} alt={`${album.album_title} Album Cover`} />
+                                                    </div>
+                                                </div>
+                                                <div className='albumpage__album-info'>
+                                                    <h2 className='page-type'>ALBUM</h2>
+                                                    <span className='albumpage-albumtitle'>{album?.album_title}</span>
+                                                    <div className='albumpage-albuminfo-container'>
+                                                        <div className='albumpage-albuminfo'>
+                                                            <figure className='albumpage-artistimg-container'>
+                                                                <img className='albumpage-artistimg' src={artist.image_url} alt={`${artist.artist_name}'s profile pic`}/>
+                                                            </figure>
+                                                            <Link to={`/artist/${artist.id}`}>
 
+                                                            </Link>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         {/* </div> */}
