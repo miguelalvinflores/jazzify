@@ -176,6 +176,7 @@
     width: 192px;
     z-index: 0;
     margin-right: 24px;
+    margin-bottom: 25px;
 }
 
 @media (min-width: 1280px) {
@@ -208,4 +209,108 @@
     height: 100%;
     width: 100%;
     box-shadow: 0 4px 60px rgb(0 0 0 / 50%);
+}
+
+.albumpage__album-info {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: end;
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    justify-content: flex-end;
+    z-index: 0;
+    align-content: space-between;
+    margin-bottom: 25px;
+}
+
+.page-type {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 4px;
+    font-weight: 700;
+}
+
+.albumpage__albumtitle {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    overflow: hidden;
+    text-align: left;
+    width: 100%;
+    word-break: break-word;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+.albumpage__albuminfo-container {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.albumpage__albuminfo {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    grid-gap: 4px;
+    -webkit-box-align: center;
+    align-items: center;
+    display: grid;
+    grid-auto-flow: column;
+    color: hsla(0,0%,100%,.7);
+    text-decoration: none;
+    white-space: nowrap;
+}
+.albumpage-artistimg-container {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.albumpage-artistimg {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    object-position: center center;
+    border-radius: 50%;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
 }

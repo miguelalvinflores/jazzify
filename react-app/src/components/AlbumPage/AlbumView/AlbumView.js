@@ -37,7 +37,7 @@ const AlbumView = () => {
                                                                 <img className='albumpage-artistimg' src={artist.image_url} alt={`${artist.artist_name}'s profile pic`}/>
                                                             </figure>
                                                             <Link to={`/artist/${artist.id}`}>
-
+                                                                {artist.artist_name}
                                                             </Link>
                                                         </div>
                                                     </div>
