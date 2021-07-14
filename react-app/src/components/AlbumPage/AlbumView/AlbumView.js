@@ -21,9 +21,9 @@ const AlbumView = () => {
                                     <section className='album-page'>
                                         {/* <div className='ap-container'> */}
                                             <div className='contentSpacing'>
-                                                <div style={{ backgroundColor: data.darkVibrant }} className='billboard-background' />
-                                                <div className='billboard-background-gradient' />
-                                                <div className='album-visuals-container'>
+                                                {/* <div style={{ backgroundColor: data.darkVibrant }} className='billboard-background' /> */}
+                                                {/* <div className='billboard-background-gradient' />
+                                                <div className='album-visuals-container'> */}
                                                     <div className='album-cover-container'>
                                                         <img className='album-cover' src={album.image_url} alt={`${album.album_title} Album Cover`} />
                                                     </div>
