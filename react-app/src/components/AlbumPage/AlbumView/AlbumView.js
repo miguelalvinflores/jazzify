@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { usePalette } from 'react-palette'
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useParams, Link} from 'react-router-dom';
+
+import * as albumActions from '../../../store/albums';
+import * as trackActions from '../../../store/tracks';
+
 import './AlbumView.css'
 
 const AlbumView = () => {
+    const dispatch = useDispatch();
     const { albumId } = useParams();
     const album = useSelector((state) => state.albums.allAlbums[albumId]);
     const artist = useSelector((state) => state.artists.allArtists[album.artist_id])
     const { data, loading, error } = usePalette(album.image_url)
+
+
+    useEffect(() => {
+        dispatch(albumActions.thisAlbum(album))
+        dispatch(trackActions.retrieveTracksByAlbum(album))
+    })
 
     return (
         <div className='Root__album-view'>
@@ -40,7 +51,7 @@ const AlbumView = () => {
                                                                 {artist.artist_name}
                                                             </Link>
                                                             <span className='albumpage-songnum'>
-                                                                
+
                                                             </span>
                                                         </div>
                                                     </div>
