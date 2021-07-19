@@ -314,3 +314,9 @@
     object-fit: cover;
     width: 100%;
 }
+
+.albumpage-artistname {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
