@@ -14,7 +14,7 @@ const AlbumView = () => {
     const album = useSelector((state) => state.albums.allAlbums[albumId]);
     const artist = useSelector((state) => state.artists.allArtists[album.artist_id])
     const { data, loading, error } = usePalette(album.image_url)
-
+    // need to bring in the state for the album list here
 
     useEffect(() => {
         dispatch(albumActions.thisAlbum(album))
