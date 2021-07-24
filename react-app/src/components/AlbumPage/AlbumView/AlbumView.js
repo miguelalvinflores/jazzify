@@ -57,6 +57,7 @@ const AlbumView = () => {
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* rest of songs go here */}
                                             </div>
                                         {/* </div> */}
                                     </section>
