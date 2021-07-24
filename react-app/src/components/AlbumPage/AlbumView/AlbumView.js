@@ -51,6 +51,7 @@ const AlbumView = () => {
                                                                 {artist.artist_name}
                                                             </Link>
                                                             <span className='albumpage-songnum'>
+                                                                {/* length of album song array */}
 
                                                             </span>
                                                         </div>
