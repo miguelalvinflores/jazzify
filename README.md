@@ -65,6 +65,7 @@ Please take a look at our Wiki for a full list of features, and upcoming feature
 <a href="https://github.com/miguelalvinflores/jazzify/wiki" target="_top">Jazzify Wiki</a>
 
 
+
 <!-- # Footer -->
 [(Back to top)](#table-of-contents)
 
