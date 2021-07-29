@@ -17,7 +17,7 @@ const AlbumView = () => {
     // need to bring in the state for the album list here
 
     useEffect(() => {
-        dispatch(albumActions.thisAlbum(album))
+        dispatch(albumActions.albumPage(album))
         dispatch(trackActions.retrieveTracksByAlbum(album))
     })
 

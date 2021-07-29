@@ -1,5 +1,6 @@
 const GET_ALBUMS = 'album/GET_ALBUMS';
 const THIS_ALBUM = 'album/THIS_ALBUM';
+const ALBUM_PAGE = 'album/ALBUM_PAGE';
 
 export const thisAlbum = (album) => {
     return {
@@ -7,6 +8,13 @@ export const thisAlbum = (album) => {
         payload: album,
     };
 };
+
+export const albumPage = (album) => {
+    return {
+        type: ALBUM_PAGE,
+        payload: album,
+    }
+}
 
 const getAlbums = (allAlbums) => {
     return {
@@ -50,6 +58,7 @@ export const chooseAlbum = () => async (dispatch) => {
 
 const initialState = {
     album: {},
+    albumPage: {},
     allAlbums: {},
 };
 
@@ -60,6 +69,11 @@ export default function reducer(state = initialState, action) {
                 ...state,
                 album: action.payload,
             };
+        case ALBUM_PAGE:
+            return {
+                ...state,
+                albumPage: action.payload,
+            }
         case GET_ALBUMS:
             return {
                 ...state,
