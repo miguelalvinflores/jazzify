@@ -19,7 +19,10 @@ const AlbumView = () => {
     useEffect(() => {
         dispatch(albumActions.albumPage(album))
         dispatch(trackActions.retrieveTracksByAlbum(album))
-    })
+    },[album])
+
+    const tracks = useSelector((state) => state.tracks.albumTracks[album.album_title])
+    console.log(tracks, 'TRACKS')
 
     return (
         <div className='Root__album-view'>
@@ -50,9 +53,9 @@ const AlbumView = () => {
                                                             <Link className='albumpage-artistname' to={`/artist/${artist.id}`}>
                                                                 {artist.artist_name}
                                                             </Link>
+                                                            <span> • </span>
                                                             <span className='albumpage-songnum'>
-                                                                {/* length of album song array */}
-
+                                                                {tracks.length} songs
                                                             </span>
                                                         </div>
                                                     </div>
