@@ -33,7 +33,6 @@ const AlbumView = () => {
                             <div className='viewport-content' style={{padding: "0px"}, {height: "100%"}, {width: "100%"}}>
                                 <div className='album-view-container__scroll-node-child'>
                                     <section className='album-page'>
-                                        {/* <div className='ap-container'> */}
                                             <div className='contentSpacing'>
                                                 <div style={{ backgroundColor: data.darkVibrant }} className='billboard-background' />
                                                 <div className='billboard-background-gradient' />
@@ -62,7 +61,6 @@ const AlbumView = () => {
                                                 </div>
                                                 {/* rest of songs go here */}
                                             </div>
-                                        {/* </div> */}
                                     </section>
                                 </div>
                             </div>
