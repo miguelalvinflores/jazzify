@@ -16,7 +16,6 @@ All music is sourced from publicly available libraries and collections under:
 
 # Table of contents
 
-
 - [Jazzify](#Jazzify)
 - [Brief Description](#brief-introduction)
 - [Table of contents](#table-of-contents)
