@@ -5,6 +5,7 @@
 <!-- Insert Usage GIF here -->
 ![Site Demo Gif](JazzifyGIF3Mb.gif)
 
+
 ## Brief Introduction
 
 Jazzify is a website for jazzheads to listen to a privately selected library of all time jazz greats.
